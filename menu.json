@@ -1,57 +1,17 @@
 {
     "type": "list",
-    "dictionary": "https://wals09.github.io/msx/dictionary.json",
-    "background": "https://wals09.github.io/msx/background.jpg",
+    "headline": "RelonirMSX",
     "items": [
         {
+            "focus": true,
             "image": "https://wals09.github.io/msx/logon/drm.png",
             "selection": {
                 "data": {
                     "headline": "DRM-play",
-                    "text": "IPTV плеер с поддержкой плейлистов в формате m3u, m3u8, stalker-portal, медиатеки."
+                    "text": "IPTV плеер с поддержкой плейлистов в формате m3u, m3u8, stalker-portal, медиатеки. Тестовый плейлист для ознакомления с функциями плеера."
                 }
             },
             "action": "link:http://ott.drm-play.com"
-        },
-        {
-            "image": "https://wals09.github.io/msx/logon/youtube.png",
-            "selection": {
-                "data": {
-                    "headline": "YouTube",
-                    "text": "Онлайн-сервис для хостинга и просмотра видео."
-                }
-            },
-            "action": "link:https://www.youtube.com/tv#/"
-        },
-        {
-            "image": "https://wals09.github.io/msx/logon/relax.png",
-            "selection": {
-                "data": {
-                    "headline": "Relax",
-                    "text": "Подборки IPTV каналов из интернета в открытом доступе."
-                }
-            },
-            "action": "content:https://relonir8.github.io/relax.json"
-        },
-        {
-            "image": "https://wals09.github.io/msx/logon/multiki.png",
-            "selection": {
-                "data": {
-                    "headline": "Мультфильмы",
-                    "text": "Коллекция мультфильмов для детей и взрослых."
-                }
-            },
-            "action": "content:https://relonir8.github.io/multiki.json"
-        },
-        {
-            "image": "https://wals09.github.io/msx/logon/gets.png",
-            "selection": {
-                "data": {
-                    "headline": "GetsTV",
-                    "text": "Фильмы и мультфильмы. Крупнейшая база на любой вкус."
-                }
-            },
-            "action": "panel:http://lg.getstv.ru/msx/msx.json"
         }
     ]
 }
