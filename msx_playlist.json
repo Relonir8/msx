@@ -1,0 +1,10 @@
+{
+    "apps": [
+        {
+            "name": "YouTube",
+            "type": "iframe",
+            "url": "https://www.youtube.com",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
+        }
+    ]
+}
