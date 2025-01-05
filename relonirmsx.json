@@ -14,7 +14,7 @@
             "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
         },
         {
-            "image": https://wals09.github.io/msx/logon/bylampa.png",
+            "image": "https://wals09.github.io/msx/logon/bylampa.png",
             "selection": {
                 "action": "update:content:underlay:text",
                 "data": {
