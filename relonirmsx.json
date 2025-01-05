@@ -1,12 +1,10 @@
 {
     "type": "list",
-    "extension": "{col:msx-white}{ico:msx-white:event} {now:date:D, M d, yyyy}{tb}{ico:msx-white:access-time} {now:time:hh:mm}",
-    "background": "https://i.pinimg.com/originals/72/4c/9b/724c9bf9a4fbe1f827c1a4f2c77243b4.jpg",
+    "background": "https://via.placeholder.com/1920x1080", 
     "items": [
         {
             "image": "https://wals09.github.io/msx/logon/atodo.png",
             "selection": {
-                "important": true,
                 "action": "update:content:underlay:text",
                 "data": {
                     "headline": "ATODO",
@@ -16,9 +14,8 @@
             "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
         },
         {
-            "image": "https://wals09.github.io/msx/logon/bylampa.png",
+            "image": https://wals09.github.io/msx/logon/bylampa.png",
             "selection": {
-                "important": true,
                 "action": "update:content:underlay:text",
                 "data": {
                     "headline": "Lampa UnCensored",
