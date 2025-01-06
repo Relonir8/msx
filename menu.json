@@ -155,12 +155,12 @@
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
-               "headline": "YouTUBE",
+               "headline": "YouTube",
                "text": "Oнлайн-сервис для хостинга и просмотра видео"
             }
          },
          "image": "https://wals09.github.io/msx/logon/youtube.png",
-         "action": "link:https://webproxy.nsocks.com/request?area=PL&u=https://YouTube.com"
+         "action": "link:https://www.youtube.com/tv#/"
       },
       {
          "selection": {
