@@ -15,7 +15,6 @@
       height: 100vh;
       border: none;
     }
-    /* Для визуального выделения */
     .highlight {
       outline: 3px solid red;
       border-radius: 5px;
@@ -27,56 +26,77 @@
 
   <script>
     const iframe = document.getElementById('pipedIframe');
-    let currentScrollPosition = 0;
+    let currentElementIndex = 0;
+    let elements = [];
 
-    // Прокрутка внутри iframe
-    function scrollIframe(direction) {
-      if (iframe.contentWindow) {
-        iframe.contentWindow.scrollBy(0, direction === 'down' ? 100 : -100);
+    // Обновляем список элементов для взаимодействия
+    function updateElements() {
+      if (iframe.contentWindow && iframe.contentDocument) {
+        elements = Array.from(iframe.contentDocument.querySelectorAll('a, button, div'));
       }
     }
 
-    // Отправка клавиш в iframe
-    function sendKeyToIframe(key) {
-      if (iframe.contentWindow) {
-        const event = new KeyboardEvent('keydown', {
-          key,
-          bubbles: true,
-          cancelable: true
-        });
-        iframe.contentWindow.document.dispatchEvent(event);
+    // Выделяем текущий элемент
+    function highlightElement(index) {
+      if (!elements.length) return;
+
+      // Удаляем выделение со всех элементов
+      elements.forEach((el) => el.classList.remove('highlight'));
+
+      // Добавляем выделение к текущему элементу
+      const currentElement = elements[index];
+      if (currentElement) {
+        currentElement.classList.add('highlight');
+        currentElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     }
 
-    // Навигация по странице
+    // Обрабатываем движение вверх/вниз
     function navigate(direction) {
+      if (!elements.length) return;
+
       if (direction === 'up') {
-        scrollIframe('up');
+        currentElementIndex = Math.max(currentElementIndex - 1, 0);
       } else if (direction === 'down') {
-        scrollIframe('down');
-      } else {
-        // Отправляем стрелки в iframe для взаимодействия с элементами
-        sendKeyToIframe(direction === 'left' ? 'ArrowLeft' : 'ArrowRight');
+        currentElementIndex = Math.min(currentElementIndex + 1, elements.length - 1);
+      }
+
+      highlightElement(currentElementIndex);
+    }
+
+    // Активируем текущий элемент
+    function activateElement() {
+      if (!elements.length) return;
+
+      const currentElement = elements[currentElementIndex];
+      if (currentElement) {
+        currentElement.click();
       }
     }
 
-    // Эмуляция нажатия кнопки Enter
-    function activateSelection() {
-      sendKeyToIframe('Enter');
+    // Возврат назад
+    function goBack() {
+      if (iframe.contentWindow) {
+        iframe.contentWindow.history.back();
+      }
     }
 
-    // Обработка событий клавиатуры
+    // Инициализация элементов при загрузке iframe
+    iframe.onload = () => {
+      updateElements();
+      highlightElement(currentElementIndex);
+    };
+
+    // Обработка нажатий клавиш
     document.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowUp') {
         navigate('up');
       } else if (e.key === 'ArrowDown') {
         navigate('down');
-      } else if (e.key === 'ArrowLeft') {
-        navigate('left');
-      } else if (e.key === 'ArrowRight') {
-        navigate('right');
       } else if (e.key === 'Enter') {
-        activateSelection();
+        activateElement();
+      } else if (e.key === 'Backspace') {
+        goBack();
       }
     });
   </script>
