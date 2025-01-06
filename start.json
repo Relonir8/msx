@@ -1,6 +1,6 @@
 {    
     "name": "Relonir_MSX",
-    "version": "0.0",
+    "version": "0.1",
     "parameter": "content: https://relonir8.github.io/RelonirMSX/menu.json",
       "dictionary": "https://relonir8.github.io/RelonirMSX/dictionary.json",
     "launcher": {
