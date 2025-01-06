@@ -19,6 +19,9 @@
       border: none;
       display: block;
     }
+    .focus {
+      outline: 2px solid #ff0000; /* Выделение активного элемента */
+    }
   </style>
 </head>
 <body>
@@ -27,11 +30,41 @@
   <script>
     const iframe = document.getElementById('piped-frame');
 
+    // Фокусировка на iframe
+    let focusIndex = 0;
+
+    const sendKeyToIframe = (key) => {
+      iframe.contentWindow.postMessage({ key }, '*');
+    };
+
     document.addEventListener('keydown', (event) => {
-      const allowedKeys = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Enter", "Backspace"];
-      if (allowedKeys.includes(event.key)) {
-        iframe.contentWindow.postMessage({ key: event.key }, '*');
+      switch (event.key) {
+        case 'ArrowUp':
+          sendKeyToIframe('ArrowUp');
+          break;
+        case 'ArrowDown':
+          sendKeyToIframe('ArrowDown');
+          break;
+        case 'ArrowLeft':
+          sendKeyToIframe('ArrowLeft');
+          break;
+        case 'ArrowRight':
+          sendKeyToIframe('ArrowRight');
+          break;
+        case 'Enter':
+          sendKeyToIframe('Enter');
+          break;
+        case 'Backspace':
+          sendKeyToIframe('Backspace');
+          break;
+        default:
+          console.log('Необработанная клавиша:', event.key);
       }
+    });
+
+    // Обработка сообщений от iframe
+    window.addEventListener('message', (event) => {
+      console.log('Сообщение от iframe:', event.data);
     });
   </script>
 </body>
