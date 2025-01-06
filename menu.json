@@ -168,11 +168,23 @@
             "action": "update:content:underlay:text",
             "data": {
                "headline": "YOUTUBE KIDS",
-               "text": "Oтдельная версия популярного видеохостинга Youtube, нацеленная исключительно на детей."
+               "text": "Oтдельная версия Youtube, нацеленная исключительно на детей."
             }
          },
          "image": "https://wals09.github.io/msx/logon/ytkids.png",
          "action": "link:https://www.youtube.com/tv/kids"
+      },
+            {
+         "selection": {
+            "important": true,
+            "action": "update:content:underlay:text",
+            "data": {
+               "headline": "Piped",
+               "text": "Альтернативный YouTube, если у вас не работает классический. Автоматически пропускает рекламу в роликах"
+            }
+         },
+         "image": "https://relonir8.github.io/msx/piped.png",
+         "action": "link:https://piped.video/trending"
       }
    ]
 }
