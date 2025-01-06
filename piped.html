@@ -15,8 +15,8 @@
       height: 100vh;
       border: none;
     }
-    .focused {
-      outline: 3px solid red;
+    .highlight {
+      outline: 2px solid red;
     }
   </style>
 </head>
@@ -24,67 +24,41 @@
   <iframe id="pipedIframe" src="https://piped.video"></iframe>
 
   <script>
-    let activeElementIndex = 0; // Индекс активного элемента
-    let clickableElements = []; // Массив кликабельных элементов
-
     const iframe = document.getElementById('pipedIframe');
+    let focusedElement = null;
 
-    // Функция для фокусировки элемента
-    function focusElement(index) {
-      if (clickableElements.length === 0) return;
-      clickableElements.forEach((el, i) => {
-        el.classList.remove('focused');
-        if (i === index) el.classList.add('focused');
-      });
-    }
-
-    // Получение всех кликабельных элементов с сайта
-    function loadClickableElements() {
-      iframe.contentWindow.postMessage({ action: 'get-clickables' }, '*');
-    }
-
-    // Обработка сообщений из iframe
-    window.addEventListener('message', (event) => {
-      if (event.data.action === 'set-clickables') {
-        clickableElements = event.data.elements.map((selector) =>
-          iframe.contentDocument.querySelector(selector)
-        );
-        focusElement(activeElementIndex);
-      }
-    });
-
-    // Навигация по элементам
+    // Обработка событий клавиатуры
     document.addEventListener('keydown', (e) => {
-      if (clickableElements.length === 0) return;
-
-      switch (e.key) {
-        case 'ArrowUp':
-        case 'ArrowLeft':
-          activeElementIndex =
-            (activeElementIndex - 1 + clickableElements.length) % clickableElements.length;
-          focusElement(activeElementIndex);
-          break;
-
-        case 'ArrowDown':
-        case 'ArrowRight':
-          activeElementIndex = (activeElementIndex + 1) % clickableElements.length;
-          focusElement(activeElementIndex);
-          break;
-
-        case 'Enter':
-          if (clickableElements[activeElementIndex]) {
-            clickableElements[activeElementIndex].click();
-          }
-          break;
-
-        case 'Backspace':
-          window.history.back();
-          break;
+      if (e.key === 'ArrowUp') {
+        navigate('up');
+      } else if (e.key === 'ArrowDown') {
+        navigate('down');
+      } else if (e.key === 'ArrowLeft') {
+        navigate('left');
+      } else if (e.key === 'ArrowRight') {
+        navigate('right');
+      } else if (e.key === 'Enter') {
+        activate();
       }
     });
 
-    // Загрузка кликабельных элементов после загрузки iframe
-    iframe.addEventListener('load', loadClickableElements);
+    // Навигация
+    function navigate(direction) {
+      // Если сайт Piped поддерживает внутреннюю фокусировку, то эта часть будет работать.
+      const message = { type: 'navigate', direction: direction };
+      iframe.contentWindow.postMessage(message, '*');
+    }
+
+    // Активация (эмуляция клика по элементу)
+    function activate() {
+      const message = { type: 'activate' };
+      iframe.contentWindow.postMessage(message, '*');
+    }
+
+    // Установка фокуса на iframe
+    iframe.addEventListener('load', () => {
+      iframe.contentWindow.focus();
+    });
   </script>
 </body>
 </html>
