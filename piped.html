@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Piped with Remote Control</title>
+  <title>Piped Video Navigation</title>
   <style>
     body {
       margin: 0;
@@ -15,6 +15,7 @@
       height: 100vh;
       border: none;
     }
+    /* Для визуального выделения */
     .highlight {
       outline: 3px solid red;
       border-radius: 5px;
@@ -26,59 +27,43 @@
 
   <script>
     const iframe = document.getElementById('pipedIframe');
-    let focusIndex = 0;
-    let focusableItems = [];
-    
-    // Функция для получения элементов на странице iframe
-    function getFocusableItems() {
-      const elements = iframe.contentWindow.document.querySelectorAll('a, button, [role="button"], .video-card, .menu-item');
-      return Array.from(elements);
-    }
+    let currentScrollPosition = 0;
 
-    // Функция выделения текущего элемента
-    function highlightItem(index) {
-      // Сброс предыдущего выделения
-      focusableItems.forEach(item => item.classList.remove('highlight'));
-      // Добавляем выделение к текущему элементу
-      if (focusableItems[index]) {
-        focusableItems[index].classList.add('highlight');
-        focusableItems[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // Прокрутка внутри iframe
+    function scrollIframe(direction) {
+      if (iframe.contentWindow) {
+        iframe.contentWindow.scrollBy(0, direction === 'down' ? 100 : -100);
       }
     }
 
-    // Навигация
+    // Отправка клавиш в iframe
+    function sendKeyToIframe(key) {
+      if (iframe.contentWindow) {
+        const event = new KeyboardEvent('keydown', {
+          key,
+          bubbles: true,
+          cancelable: true
+        });
+        iframe.contentWindow.document.dispatchEvent(event);
+      }
+    }
+
+    // Навигация по странице
     function navigate(direction) {
-      if (focusableItems.length === 0) return;
-
-      if (direction === 'up' || direction === 'left') {
-        focusIndex = (focusIndex > 0) ? focusIndex - 1 : focusableItems.length - 1;
-      } else if (direction === 'down' || direction === 'right') {
-        focusIndex = (focusIndex < focusableItems.length - 1) ? focusIndex + 1 : 0;
-      }
-
-      highlightItem(focusIndex);
-    }
-
-    // Активация (эмуляция клика по элементу)
-    function activate() {
-      if (focusableItems[focusIndex]) {
-        focusableItems[focusIndex].click();
+      if (direction === 'up') {
+        scrollIframe('up');
+      } else if (direction === 'down') {
+        scrollIframe('down');
+      } else {
+        // Отправляем стрелки в iframe для взаимодействия с элементами
+        sendKeyToIframe(direction === 'left' ? 'ArrowLeft' : 'ArrowRight');
       }
     }
 
-    // Инициализация при загрузке iframe
-    iframe.addEventListener('load', () => {
-      // Устанавливаем фокус на iframe
-      iframe.contentWindow.focus();
-      
-      // Загружаем фокусируемые элементы
-      setTimeout(() => {
-        focusableItems = getFocusableItems();
-        if (focusableItems.length > 0) {
-          highlightItem(focusIndex);
-        }
-      }, 2000); // Ждем загрузки контента
-    });
+    // Эмуляция нажатия кнопки Enter
+    function activateSelection() {
+      sendKeyToIframe('Enter');
+    }
 
     // Обработка событий клавиатуры
     document.addEventListener('keydown', (e) => {
@@ -91,7 +76,7 @@
       } else if (e.key === 'ArrowRight') {
         navigate('right');
       } else if (e.key === 'Enter') {
-        activate();
+        activateSelection();
       }
     });
   </script>
