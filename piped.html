@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Piped in MSX</title>
+  <title>Piped with Remote Control</title>
   <style>
     body {
       margin: 0;
       overflow: hidden;
+      background-color: #000;
     }
     iframe {
       width: 100vw;
@@ -15,7 +16,7 @@
       border: none;
     }
     .focused {
-      outline: 2px solid red;
+      outline: 3px solid red;
     }
   </style>
 </head>
@@ -23,38 +24,67 @@
   <iframe id="pipedIframe" src="https://piped.video"></iframe>
 
   <script>
-    // Ссылка на iframe
+    let activeElementIndex = 0; // Индекс активного элемента
+    let clickableElements = []; // Массив кликабельных элементов
+
     const iframe = document.getElementById('pipedIframe');
 
-    // Прослушивание событий нажатия клавиш
+    // Функция для фокусировки элемента
+    function focusElement(index) {
+      if (clickableElements.length === 0) return;
+      clickableElements.forEach((el, i) => {
+        el.classList.remove('focused');
+        if (i === index) el.classList.add('focused');
+      });
+    }
+
+    // Получение всех кликабельных элементов с сайта
+    function loadClickableElements() {
+      iframe.contentWindow.postMessage({ action: 'get-clickables' }, '*');
+    }
+
+    // Обработка сообщений из iframe
+    window.addEventListener('message', (event) => {
+      if (event.data.action === 'set-clickables') {
+        clickableElements = event.data.elements.map((selector) =>
+          iframe.contentDocument.querySelector(selector)
+        );
+        focusElement(activeElementIndex);
+      }
+    });
+
+    // Навигация по элементам
     document.addEventListener('keydown', (e) => {
+      if (clickableElements.length === 0) return;
+
       switch (e.key) {
         case 'ArrowUp':
-          // Логика для управления вверх
-          iframe.contentWindow.postMessage({ action: 'up' }, '*');
-          break;
-        case 'ArrowDown':
-          // Логика для управления вниз
-          iframe.contentWindow.postMessage({ action: 'down' }, '*');
-          break;
         case 'ArrowLeft':
-          // Логика для управления влево
-          iframe.contentWindow.postMessage({ action: 'left' }, '*');
+          activeElementIndex =
+            (activeElementIndex - 1 + clickableElements.length) % clickableElements.length;
+          focusElement(activeElementIndex);
           break;
+
+        case 'ArrowDown':
         case 'ArrowRight':
-          // Логика для управления вправо
-          iframe.contentWindow.postMessage({ action: 'right' }, '*');
+          activeElementIndex = (activeElementIndex + 1) % clickableElements.length;
+          focusElement(activeElementIndex);
           break;
+
         case 'Enter':
-          // Логика для выбора элемента
-          iframe.contentWindow.postMessage({ action: 'select' }, '*');
+          if (clickableElements[activeElementIndex]) {
+            clickableElements[activeElementIndex].click();
+          }
           break;
+
         case 'Backspace':
-          // Логика для возврата назад
-          iframe.contentWindow.postMessage({ action: 'back' }, '*');
+          window.history.back();
           break;
       }
     });
+
+    // Загрузка кликабельных элементов после загрузки iframe
+    iframe.addEventListener('load', loadClickableElements);
   </script>
 </body>
 </html>
