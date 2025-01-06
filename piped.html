@@ -16,7 +16,8 @@
       border: none;
     }
     .highlight {
-      outline: 2px solid red;
+      outline: 3px solid red;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -25,7 +26,59 @@
 
   <script>
     const iframe = document.getElementById('pipedIframe');
-    let focusedElement = null;
+    let focusIndex = 0;
+    let focusableItems = [];
+    
+    // Функция для получения элементов на странице iframe
+    function getFocusableItems() {
+      const elements = iframe.contentWindow.document.querySelectorAll('a, button, [role="button"], .video-card, .menu-item');
+      return Array.from(elements);
+    }
+
+    // Функция выделения текущего элемента
+    function highlightItem(index) {
+      // Сброс предыдущего выделения
+      focusableItems.forEach(item => item.classList.remove('highlight'));
+      // Добавляем выделение к текущему элементу
+      if (focusableItems[index]) {
+        focusableItems[index].classList.add('highlight');
+        focusableItems[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+
+    // Навигация
+    function navigate(direction) {
+      if (focusableItems.length === 0) return;
+
+      if (direction === 'up' || direction === 'left') {
+        focusIndex = (focusIndex > 0) ? focusIndex - 1 : focusableItems.length - 1;
+      } else if (direction === 'down' || direction === 'right') {
+        focusIndex = (focusIndex < focusableItems.length - 1) ? focusIndex + 1 : 0;
+      }
+
+      highlightItem(focusIndex);
+    }
+
+    // Активация (эмуляция клика по элементу)
+    function activate() {
+      if (focusableItems[focusIndex]) {
+        focusableItems[focusIndex].click();
+      }
+    }
+
+    // Инициализация при загрузке iframe
+    iframe.addEventListener('load', () => {
+      // Устанавливаем фокус на iframe
+      iframe.contentWindow.focus();
+      
+      // Загружаем фокусируемые элементы
+      setTimeout(() => {
+        focusableItems = getFocusableItems();
+        if (focusableItems.length > 0) {
+          highlightItem(focusIndex);
+        }
+      }, 2000); // Ждем загрузки контента
+    });
 
     // Обработка событий клавиатуры
     document.addEventListener('keydown', (e) => {
@@ -40,24 +93,6 @@
       } else if (e.key === 'Enter') {
         activate();
       }
-    });
-
-    // Навигация
-    function navigate(direction) {
-      // Если сайт Piped поддерживает внутреннюю фокусировку, то эта часть будет работать.
-      const message = { type: 'navigate', direction: direction };
-      iframe.contentWindow.postMessage(message, '*');
-    }
-
-    // Активация (эмуляция клика по элементу)
-    function activate() {
-      const message = { type: 'activate' };
-      iframe.contentWindow.postMessage(message, '*');
-    }
-
-    // Установка фокуса на iframe
-    iframe.addEventListener('load', () => {
-      iframe.contentWindow.focus();
     });
   </script>
 </body>
