@@ -160,7 +160,7 @@
             }
          },
          "image": "https://wals09.github.io/msx/logon/youtube.png",
-         "action": "link:https://185.16.39.161/tv?__cpo=aHR0cHM6Ly93d3cueW91dHViZS5jb20#/"
+         "action": "link:https://webproxy.lumiproxy.com/request?area=PL&u=https://www.youtube.com/tv#/"
       },
       {
          "selection": {
