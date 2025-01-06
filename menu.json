@@ -160,7 +160,7 @@
             }
          },
          "image": "https://wals09.github.io/msx/logon/youtube.png",
-         "action": "link:https://webproxy.nsocks.com/"
+         "action": "link:https://webproxy.nsocks.com/request?area=LV&u=https://YouTube.com"
       },
       {
          "selection": {
