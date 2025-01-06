@@ -1,99 +1,60 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Адаптированный Piped</title>
+  <title>Piped in MSX</title>
   <style>
     body {
       margin: 0;
-      background-color: #000;
-      color: white;
+      overflow: hidden;
     }
     iframe {
-      border: none;
       width: 100vw;
       height: 100vh;
+      border: none;
     }
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
+    .focused {
+      outline: 2px solid red;
     }
   </style>
 </head>
 <body>
-  <!-- Основное содержимое сайта Piped -->
-  <iframe id="piped" src="https://piped.video"></iframe>
-
-  <!-- Навигационный слой -->
-  <div class="overlay" id="overlay"></div>
+  <iframe id="pipedIframe" src="https://piped.video"></iframe>
 
   <script>
-    // Эмуляция кнопок пульта
-    const iframe = document.getElementById("piped");
+    // Ссылка на iframe
+    const iframe = document.getElementById('pipedIframe');
 
-    // Передача событий клавиатуры внутрь iframe
-    document.addEventListener("keydown", (e) => {
-      const allowedKeys = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Enter", "Backspace"];
-      if (allowedKeys.includes(e.key)) {
-        iframe.contentWindow.postMessage({ type: "key", key: e.key }, "*");
+    // Прослушивание событий нажатия клавиш
+    document.addEventListener('keydown', (e) => {
+      switch (e.key) {
+        case 'ArrowUp':
+          // Логика для управления вверх
+          iframe.contentWindow.postMessage({ action: 'up' }, '*');
+          break;
+        case 'ArrowDown':
+          // Логика для управления вниз
+          iframe.contentWindow.postMessage({ action: 'down' }, '*');
+          break;
+        case 'ArrowLeft':
+          // Логика для управления влево
+          iframe.contentWindow.postMessage({ action: 'left' }, '*');
+          break;
+        case 'ArrowRight':
+          // Логика для управления вправо
+          iframe.contentWindow.postMessage({ action: 'right' }, '*');
+          break;
+        case 'Enter':
+          // Логика для выбора элемента
+          iframe.contentWindow.postMessage({ action: 'select' }, '*');
+          break;
+        case 'Backspace':
+          // Логика для возврата назад
+          iframe.contentWindow.postMessage({ action: 'back' }, '*');
+          break;
       }
     });
-
-    // Обработка событий внутри iframe
-    window.addEventListener("message", (e) => {
-      if (e.data.type === "log") {
-        console.log(e.data.message);
-      }
-    });
-
-    // Выделение кнопок в Piped через кастомный JS
-    iframe.onload = () => {
-      iframe.contentWindow.postMessage(
-        {
-          type: "inject",
-          script: `
-            (function() {
-              document.addEventListener("keydown", (e) => {
-                let focused = document.querySelector(".focused");
-                if (!focused) {
-                  focused = document.querySelector("a");
-                  if (focused) focused.classList.add("focused");
-                } else {
-                  focused.classList.remove("focused");
-                  switch (e.key) {
-                    case "ArrowUp":
-                      focused = focused.closest("div").previousElementSibling?.querySelector("a") || focused;
-                      break;
-                    case "ArrowDown":
-                      focused = focused.closest("div").nextElementSibling?.querySelector("a") || focused;
-                      break;
-                    case "ArrowLeft":
-                      focused = focused.previousElementSibling || focused;
-                      break;
-                    case "ArrowRight":
-                      focused = focused.nextElementSibling || focused;
-                      break;
-                    case "Enter":
-                      focused.click();
-                      break;
-                    case "Backspace":
-                      window.history.back();
-                      break;
-                  }
-                  if (focused) focused.classList.add("focused");
-                }
-              });
-            })();
-          `,
-        },
-        "*"
-      );
-    };
   </script>
 </body>
 </html>
