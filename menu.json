@@ -50,8 +50,8 @@
                "text": "Бесплатные ТВ каналы от Zminus"
             }
          },
-         "image": "",
-         "action": "user:http://msx.benzac.de/services/m3u.php/msx/m3u.php?type=video&mode=extended&url=https://relonir.github.io/msx/zminus.m3u"
+         "image": "https://relonir8.github.io/msx/zminus/zminus.png",
+         "action": "content: https://relonir8.github.io/msx/zminus/zminus_tv.json"
       },
       {
          "selection": {
