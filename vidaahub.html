@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html>
+<head>  
+
+    <title>Vidaa App Store</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, height=device-height">  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    
+ <script type="text/javascript"> 
+ 
+var N = 9;
+var NP = 5;
+
+var LIST = [
+
+{appid:'anb_ufatv2',name:'Ufanet_TV2',url:'http://webkit.ufanet.platform24.tv/',text:'Уфанет ТВ Всё ТВ и кинотеатры в одном приложении'},
+{appid:'anb_ufatv3',name:'Ufanet_TV3',url:'http://webkit.ufanet.tv',text:'Уфанет ТВ Всё ТВ и кинотеатры в одном приложении'},
+{appid:'anb_smarty',name:'IPTV_Ufanet',url:'http://web.iptv.ufanet.ru/',text:'IPTV Уфанет Всё ТВ и кинотеатры в одном приложении'},
+{appid:'anb_lampa',name:'Lampa',url:'http://lampa.mx/',text:'Новое полностью бесплатное приложение для Smart TV'},
+{appid:'anb_vokino',name:'vokino',url:'http://web.vokino.tv/',text:'Смотреть зарубежные фильмы и сериалы в хорошем качестве'},
+{appid:'anb_atodo',name:'Atodo',url:'http://msx.benzac.de/?start=menu:request:interaction:menu@http://atodo.fun/fun.html',text:'АТОDO'},
+{appid:'anb_fxml',name:'Media Station X',url:'http://msx.benzac.de/foxxum.html',text:'Приложение для создания настраиваемых мультимедийных страниц (видео, аудио и пр.)'},
+{appid:'anb_moovies',name:'Moovies',url:'http://msx.benzac.de/?start=menu:request:interaction:init@http://moovies.uz/index.html',text:'Moovies for MSX'},
+{appid:'anb_movielab',name:'Movielab',url:'https://msx.benzac.de/?start=menu:https://movielab.fun/msx/menu.json',text:'Наслаждайтесь просмотром лучших фильмов с MovieLab'},
+
+{appid:'anb_deeplex',name:'DEEPLEX',url:'http://smart.deeplex.cc',text:'Фильмы, сериалы и многое другое без ограничений.Инструкция -> http://deeplex.cc/#/instructions'},
+{appid:'anb_drmplay',name:'DRM-play',url:'http://drm-play.com',text:'Ott плеер drm-play, mod плеера ott-play by Alex '},
+//{appid:'anb_msx',name:'MSXPlayer',url:'http://msx.benzac.de/?welcome=menu:request:interaction:menu@http://plugins.msxplayer.ru/store.html',text:'Лаунчер приложений, TorrServer-клиент, FXML-браузер, IPTV-просмотр…'},
+{appid:'anb_fork',name:'ForkPlayer',url:'http://browser.appfxml.com/',text:'ForkPlayer — это браузер с адаптированным под ваше устройство просмотром сайтов'},
+{appid:'anb_forkbrowser',name:'Fork Browser',url:'http://browser.appinfo.su/',text:'Новая, улучшенная версия ForkPlayer'},
+{appid:'anb_lampalite4',name:'Lampa lite',url:'http://lite.lampa.mx/',text:'Lampa Lite, облегченная версия приложения для онлайн просмотра.'},
+{appid:'anb_twitch',name:'twitch',url:'https://hisense.tv.twitch.tv/',text:'Видеостриминговый сервис, специализирующийся на тематике компьютерных игр.'},
+
+{appid:'anb_vkvideo',name:'VK видео',url:'https://tv.vk.com/app/2.0.8/vidaa/',text:'Смотрите видеозаписи ВКонтакте на большом экране SmartTV. '},
+{appid:'anb_beeline',name:'Билайн ТВ',url:'https://smart-vidaa.beeline.tv/',text:'Тысячи фильмов, сериалов и мультфильмов. 300 каналов и доступ к онлайн-кинотеатру beeline.tv.'},
+{appid:'anb_xsmart',name:'Xsmart',url:'http://app.xsmart.tv/?seller=vidaa',text:'Приложение для Smart TV, которое объединяет в себе различные функции.'},
+{appid:'anb_xsmartlite',name:'Xsmart classic',url:'http://app.xsmart.tv/?widg=lite',text:'Приложение для Smart TV, которое объединяет в себе различные функции. Lite версия приложения.'},
+{appid:'anb_viju',name:'Viju',url:'https://smarttv.viju.ru',text:'Viju – это лучшие фильмы, сериалы и мультфильмы по подписке'},
+//{appid:'anb_lava',name:'LAVA',url:'https://html5.lavaonline.tv',text:'Площадка для бесплатного просмотра современного российского кино'},
+{appid:'anb_tiktok',name:'TikTok',url:'https://tv.tiktok.com/webos',text:'Ведущая видеоплатформа для коротких видео'},
+
+{appid:'anb_kinopoisk',name:'Кинопоиск',url:'https://smarttv-app.ott.yandex.ru/?ott-rv=vidaa',text:'Крупнейший русскоязычный онлайн-кинотеатр.'},
+{appid:'anb_yandexvideo',name:'Яндекс видео',url:'https://yandex.ru/video/tvapp/?ui=tvapp',text:'Cмотреть телепередачи, музыкальные клипы, игровые ролики и популярное на YouTube'},
+{appid:'anb_ott',name:'OttPlayer',url:'http://widget.ottplayer.tv/operatv2/index.html',text:'Cервис, который позволяет вам собрать всё ваше IP-телевидение в одном плейлисте.'},
+{appid:'anb_ottold',name:'OttPlayerTest',url:'http://widget.ottplayer.tv/test/index.html',text:'OttPlayer, более новая(тестовая версия приложения)'},
+{appid:'anb_wink',name:'Wink',url:'https://production-vidaa-fhd.wink.ru/',text:'Цифровой видеосервис компании «Ростелеком»'},
+{appid:'anb_kion',name:'Кион',url:'http://hkion.kion.ru/',text:'Российская мультимедийная онлайн-платформа, созданная компанией МТС'},
+
+{appid:'anb_ssiptv',name:'ssiptv',url:'http://app.ss-iptv.com',text:'Медиа сервер для просмотра фильмов, сериалов, мультфильмов и пр.'},
+{appid:'anb_icva',name:'ICVA',url:'http://icva.mx/',text:'ICVA - новое приложение для просмотра IPTV каналов'},
+{appid:'anb_tvap',name:'TVap',url:'http://tvphone.site/',text:'TVap - просмотр IPTV каналов на Smart TV'},
+{appid:'anb_peers',name:'PeersTV',url:'http://smarttv.peers.tv/hisense/hisense-1.0.0/',text:'Бесплатное приложение для просмотра ТВ онлайн и в записи. Лайт версия без рекламы'},
+{appid:'anb_bonus',name:'Бонус ТВ',url:'http://app.bonus-tv.ru/lg/',text:'Телевидение онлайн на смартфоне, планшете, Smart-телевизоре или ТВ-приставке.'},
+{appid:'anb_amediateka',name:'Aмедиатека',url:'http://lg-tv.amediateka.ru/',text:'Онлайн-сервис Амедиатека и телеканалы AMEDIA TV. Лучшие сериалы планеты'},
+
+//{appid:'anb_forkbrowser',name:'Fork Browser',url:'http://browser.appinfo.su/',text:'Новая, улучшенная версия ForkPlayer'},
+{appid:'anb_prisma',name:'Prisma',url:'http://prisma.ws/',text:'Полностью готовый к работе форк Lampa.'},
+//{appid:'anb_ott',name:'OttPlayer',url:'http://widget.ottplayer.tv/operatv2/index.html',text:'Cервис, который позволяет вам собрать всё ваше IP-телевидение в одном плейлисте.'},
+//{appid:'anb_ottold',name:'OttPlayerTest',url:'http://widget.ottplayer.tv/test/index.html',text:'OttPlayer, более новая(тестовая версия приложения)'},
+{appid:'anb_gets',name:'GetsTV',url:'https://getstv.com/app/',text:'Приложение для просмотра ТВ, фильмов и сериалов.'},
+{appid:'anb_ottplay_mod',name:'OTT-Play FOSS',url:'http://ott.prog4food.eu.org/f/',text:' Moд iptv плеера Ott-Play by Alex. Отсутствие баннеров и блокировки каналов.'},
+{appid:'anb_kinopub',name:'KinoPubTV',url:'http://cdnservices.link',text:'Неофициальный клиент для популярного онлайн-кинотеатра'},
+//{appid:'anb_kinopub2',name:'KinoPubTV',url:'https://kpms.cc',text:'Неофициальный клиент для популярного онлайн-кинотеатра.'},
+//{appid:'anb_kinopub2',name:'KinoPub',url:'http://kpstv.net/app/hisense/',text:'Еще один неофициальный клиент для онлайн-кинотеатра kinopub'},
+{appid:'anb_lampaun',name:'ByLampa',url:'http://bylampa.online/',text:'Неофициальный форк онлайн-кинотеатра Lampa'},
+{appid:'anb_lampaland',name:'Lampa.land',url:'http://lampa.land',text:'Проект, созданный для тех, кто не может самостоятельно настроить приложение Lampa'},
+
+
+{appid:'anb_iptvportal',name:'IPTVPORTAL',url:'http://go.iptvportal.ru/?screen=1280x720&user-agent=lg',text:'Просмотр IPTV из сетей провайдеров, подключенных к платформе IPTVPORTAL'},
+{appid:'anb_oneplayer',name:'Oneplayer',url:'http://webos.oneplayer.me/',text:'Интернет-плеер с широким функционалом'},
+{appid:'anb_clouddy',name:'ClouDDy',url:'http://player.clouddy.online/',text:'Продвинутый и удобный медиаплеер для воспроизведения вашего любимого медиаконтента.'},
+{appid:'anb_smotreshka',name:'Смотрешка',url:'https://smotreshka.webapp.lfstrm.tv/loaders/vidaa/index.html',text:'Современное интерактивное телевидение'},
+{appid:'anb_ivikids',name:'IVI детям',url:'http://lgkids.ivi.ru',text:'Приложение, сделанное специально для детей! Мультики, фильмы и сериалы'},
+{appid:'anb_viloud',name:'Viloud',url:'https://app.viloud.tv//smarttv//v2//?associate=fox-a5f1&app=ef2b1dd758eb0fcc065561e1275e4af6#viloud',text:'Самая Простая и Доступная Онлайн-Видеоплатформа'},
+
+{appid:'anb_vevo',name:'Vevo',url:'https://hisense.vevo.com',text:'Музыкальное видео от крупнейших звукозаписывающих корпораций'},
+{appid:'anb_webvideocast2',name:'Web Video Cast',url:'http://vewd.webvideocaster.com/',text:'Позволяет вам транслировать любое видео, найденное на веб-сайтах, на ваш телевизор.'},
+{appid:'anb_sweet',name:'sweet.tv',url:'http://foxxum240.sweet.tv',text:'Бесплатное онлайн телевидение в хорошем качестве. Телеканалы в прямом эфире и в записи!'},
+{appid:'anb_stranafm',name:'Страна FM',url:'http://stranafm.bonus-tv.ru/stranafm/nettv/',text:'Страна FM — российский коммерческий развлекательный телеканал. Музыка нон стоп'},
+{appid:'anb_premier',name:'PREMIER',url:'https://hisensesmarttv.premier.one/hisense/#/main',text:'ТНТ премьер. Новые русские сериалы, фильмы и шоу.'},
+{appid:'anb_mytuner',name:'myTuner Radio',url:'https://devices.mytuner.mobi/?utm_source=Foxxum',text:'Удобное прослушивание более 30 000 популярных радиостанций 120 стран мира'},
+
+{appid:'anb_zaycev',name:'Zaycev FM',url:'https://tv.zaycev.fm/index.html',text:'Любимая музыка теперь всегда будет с вами вместе с онлайн радио Zaycev.fm!'},
+{appid:'anb_ctc',name:'СТС',url:'http://smarttv.ctc.ru',text:'Все самые интересные сериалы, популярные программы и мультфильмы телеканала СТС'},
+{appid:'anb_siptv',name:'Smart IPTV',url:'http://opera.siptv.eu',text:'Play IPTV streams, videos on your Smart TV'},
+{appid:'anb_ttktv',name:'ТТК ТВ',url:'http://eltex-web.ls.tv.ttk.ru',text:'Приложение для просмотра любимых фильмов, сериалов, мультфильмов и телевизионных программ'},
+{appid:'anb_sibseti',name:'Tв Сибсети',url:'http://smarty.nsk.211.ru',text:'IPTV для абонентов Сибсети. Создай свой личный медиацентр с нашим приложением!'},
+{appid:'anb_zefirtv',name:'Зефир ТВ',url:'http://webkit.zt.platform24.tv/',text:'ТВ-каналы, фильмы, сериалы, спорт'},
+
+{appid:'anb_smotrim',name:'Смотрим',url:'https://tv.smotrim.ru/',text:'Новости, ток-шоу, документальные и художественные фильмы, телесериалы и пр.'},
+{appid:'anb_moovi',name:'moovi',url:'http://base.portal.moovi-iptv.ru/ui/1280/index.html?rand=0.3412177627522204',text:'Кабельное Телевидение Moovi. Современный формат цифрового телевидения.'},
+{appid:'anb_tvoe',name:'TVOE',url:'https://app.tvoe.live?device=smart-tv&installed=vidaa',text:'Тысячи фильмов и сериалов'},
+{appid:'anb_emby',name:'Emby',url:'http://tv.emby.media/',text:'Медиа-сервер и домашний кинотеатр. Позволяет скачивать фильмы, сериалы и добавлять их в каталог.'},
+{appid:'anb_24_1',name:'24tv',url:'http://webkit.24h.tv',text:'24ТВ Всё ТВ и кинотеатры в одном приложении'},
+{appid:'anb_IDC',name:'IDC Smart TV',url:'https://smart.iptv.idc.md',text:'Приложение от крупнейшего телекоммуникационного оператора на территории Приднестровья'},
+
+{appid:'anb_stremio',name:'Stremio',url:'https://tv.strem.io',text:'Stremio – программа для просмотра видео-контента различных известных онлайн-сервисов'},
+{appid:'anb_tytkino',name:'Тут Кино',url:'http://fork-p0rtal.ru/project/',text:'Виджет для SmartTV от fork-portal.ru на движке VPlay.'},
+{appid:'anb_impareboom',name:'ИмперияBOOM',url:'http://web.imboom.ru/',text:'Твой HD кинотеатр. Новинки кино и сериалы без навязчивой рекламы'},
+{appid:'anb_kb_msx',name:'KinoBoom',url:'http://msx.benzac.de/?start=content:http://kb-team.club/msx/enter.php',text:'Новинки кино и сериалы'},
+{appid:'anb_djin',name:'HDGO',url:'http://hdgo.me/',text:'Полностью готовый к работе форк Lampa Lite'},
+
+{appid:'anb_popkorn',name:'Попкорн',url:'https://tv-desktop.beepopcorn.ru',text:'Бесплатное ТВ, фильмы, сериалы, видеоблоги и караоке'},
+{appid:'anb_filmix',name:'Filmix',url:'http://filmix.tv',text:'Приложение для просмотра фильмов и сериалов с популярного онлайн кинотеатра filmix.tv'},
+{appid:'anb_akter',name:'AKTER BLACK',url:'http://abvidaa.ru',text:'Уютное киноубежище - онлайн кинотеатр AKTER BLACK'},
+{appid:'anb_movix',name:'Movix',url:'http://cdn.smarttv.domru.ru/hisense/',text:'Устройте онлайн-кинотеатр у себя дома вместе с Movix!'},
+{appid:'anb_jellyfin',name:'jellyfin',url:'https://jellyfin-vidaa.vercel.app',text:'Бесплатный и свободный медиасервер'},
+]
+
+
+
+var _0x1f29be=_0x5d45;(function(_0xde510,_0x179ea8){var _0x31ec14=_0x5d45,_0xc8295=_0xde510();while(!![]){try{var _0x2f7e48=-parseInt(_0x31ec14(0x1fc))/0x1*(parseInt(_0x31ec14(0x207))/0x2)+parseInt(_0x31ec14(0x1e4))/0x3*(-parseInt(_0x31ec14(0x1ed))/0x4)+-parseInt(_0x31ec14(0x1a6))/0x5+parseInt(_0x31ec14(0x1b9))/0x6*(-parseInt(_0x31ec14(0x1c6))/0x7)+-parseInt(_0x31ec14(0x1a8))/0x8+-parseInt(_0x31ec14(0x1c0))/0x9+parseInt(_0x31ec14(0x204))/0xa;if(_0x2f7e48===_0x179ea8)break;else _0xc8295['push'](_0xc8295['shift']());}catch(_0x5d5477){_0xc8295['push'](_0xc8295['shift']());}}}(_0x4e24,0xcd016));function console_log(){}typeof console!=_0x1f29be(0x1e2)&&typeof console[_0x1f29be(0x1bc)]!='undefined'&&(console_log=console[_0x1f29be(0x1bc)]);console[_0x1f29be(0x1bc)]=function(_0x4ce609){var _0x5086ff=_0x1f29be,_0x2276a9='';typeof _0x4ce609==_0x5086ff(0x1ae)?_0x2276a9='':_0x2276a9=_0x4ce609,$('#debug')['append']('<p>'+_0x2276a9+_0x5086ff(0x19f))[_0x5086ff(0x1f3)]({'scrollTop':$(_0x5086ff(0x1fa))[_0x5086ff(0x1a2)]('scrollHeight')},0x2bc);},console[_0x1f29be(0x1b6)]=console[_0x1f29be(0x1f5)]=console[_0x1f29be(0x1d3)]=console['log'];var str=_0x1f29be(0x1a1);$(document)[_0x1f29be(0x205)](function(){var _0x7734a0=_0x1f29be;typeof Hisense_installApp!=_0x7734a0(0x1e2)?($(_0x7734a0(0x19d))['removeClass']('hide'),$[_0x7734a0(0x20e)](LIST,function(_0x30cf99,_0x3b8090){addTile(_0x3b8090);}),aboutTV()):($(_0x7734a0(0x1fa))[_0x7734a0(0x1d1)]({'height':_0x7734a0(0x202),'top':'335px','z-index':'15','font-size':'3.2rem','text-align':_0x7734a0(0x1ca),'width':_0x7734a0(0x1bd)}),$(_0x7734a0(0x1fa))[_0x7734a0(0x1d4)](_0x7734a0(0x200)));});try{var OS=Hisense_GetOSVersion();if(OS[_0x1f29be(0x1b5)]('U6')>=0x0||OS['indexOf'](_0x1f29be(0x1d7))>=0x0||OS['indexOf'](_0x1f29be(0x210))>=0x0||OS[_0x1f29be(0x1b5)]('U7')>=0x0)var fimg=_0x1f29be(0x203);else var fimg=_0x1f29be(0x1f0);}catch(_0x42130f){var fimg='images/';}var jsObj=undefined;try{jsObj=getInstalledAppJsonObj();}catch(_0x2d0ac0){console[_0x1f29be(0x1b6)](_0x1f29be(0x1db));}function addTile(_0x393b58){var _0x5628cc=_0x1f29be,_0x40b645=_0x5628cc(0x1fd)+fimg+_0x393b58[_0x5628cc(0x1d9)]+_0x5628cc(0x1c5),_0x53a96b=_0x5628cc(0x1f0)+_0x393b58[_0x5628cc(0x1d9)]+'.png',_0x41a66d=$(_0x5628cc(0x1b1)),_0x4947b4=$(_0x5628cc(0x1a3))[_0x5628cc(0x1c8)]();_0x4947b4['find'](_0x5628cc(0x1a9))[_0x5628cc(0x1af)](_0x5628cc(0x1f2),_0x53a96b),_0x4947b4['find']('.name')[_0x5628cc(0x1d4)](_0x393b58[_0x5628cc(0x1e0)]),_0x4947b4['find'](_0x5628cc(0x1d5))[_0x5628cc(0x1d4)](_0x393b58['name']),_0x4947b4[_0x5628cc(0x1a0)]('.text')[_0x5628cc(0x1d4)](_0x393b58[_0x5628cc(0x1d4)]),_0x4947b4[_0x5628cc(0x1a0)]('.install')[_0x5628cc(0x1fe)](_0x5628cc(0x1f4)+_0x393b58[_0x5628cc(0x1e0)]+'</div><div\x20class=\x22text\x22>'+_0x393b58['text']+_0x5628cc(0x1da)),_0x4947b4[_0x5628cc(0x1a0)](_0x5628cc(0x1dd))[_0x5628cc(0x20a)](_0x5628cc(0x1d9),_0x393b58[_0x5628cc(0x1d9)]),_0x4947b4['removeClass'](_0x5628cc(0x1b2)),_0x41a66d['append'](_0x4947b4);var _0x52af5a=_0x393b58['name']+_0x5628cc(0x1f5),_0x50b885=_0x5628cc(0x1eb);_0x393b58['name']=='Wink'&&(_0x50b885='hisense');;localStorage[_0x5628cc(0x1c2)]('bc')!=_0x5628cc(0x1e2)&&colorTABLE(localStorage['getItem']('bc'),localStorage[_0x5628cc(0x1c2)]('c'));;var _0x30453c=LIST[_0x5628cc(0x1cf)](_0x7fa8ef=>_0x7fa8ef[_0x5628cc(0x1e0)]==_0x393b58[_0x5628cc(0x1e0)]);_0x4947b4[_0x5628cc(0x1f7)](function(){var _0x18ea30=_0x5628cc;$(_0x18ea30(0x1d6))[_0x18ea30(0x1d4)](_0x30453c+0x1+_0x18ea30(0x1d2)+LIST[_0x18ea30(0x1ea)]),_0x4947b4['mouseover'](function(){var _0x3486a0=_0x18ea30;$('.APP')[_0x3486a0(0x209)](_0x3486a0(0x1b2));}),_0x4947b4[_0x18ea30(0x20f)](function(){var _0x5ede6d=_0x18ea30;$(_0x5ede6d(0x1d6))[_0x5ede6d(0x1a5)](_0x5ede6d(0x1b2));}),_0x4947b4[_0x18ea30(0x1a0)]('.install')[_0x18ea30(0x1b3)](function(){var _0x50227b=_0x18ea30;Hisense_installApp(_0x52af5a,_0x393b58[_0x50227b(0x1e0)],_0x40b645,_0x40b645,_0x40b645,_0x393b58[_0x50227b(0x1dc)],_0x50b885,function(_0x4d9c25){var _0x297bec=_0x50227b;_0x4d9c25?consoleGroup('NO','-',_0x297bec(0x1f6),'-'):(consoleGroup('OK','-',_0x393b58[_0x297bec(0x1e0)]+_0x297bec(0x1d8),'-'),_0x4947b4[_0x297bec(0x1a0)](_0x297bec(0x1dd))[_0x297bec(0x20d)](0x1f4),refreshAppsOnHisenseUI(_0x52af5a));});}),_0x4947b4['find'](_0x18ea30(0x1ac))['html'](_0x18ea30(0x1e9)+_0x393b58[_0x18ea30(0x1e0)]),_0x4947b4[_0x18ea30(0x1a0)]('.uninstall')['click'](function(){Hisense_uninstallApp(_0x52af5a,function(_0x2db376){var _0x2f6b40=_0x5d45;!_0x2db376?console[_0x2f6b40(0x1bc)](_0x2f6b40(0x1bb)):(consoleGroup('ОК','-',_0x393b58[_0x2f6b40(0x1e0)]+_0x2f6b40(0x1ad),'-'),_0x4947b4[_0x2f6b40(0x1a0)](_0x2f6b40(0x1dd))[_0x2f6b40(0x1b7)](0x1f4),refreshAppsOnHisenseUI());});});if(!!jsObj)for(var _0x3bb047=0x0;_0x3bb047<jsObj['AppInfo'][_0x18ea30(0x1ea)];_0x3bb047++){_0x393b58[_0x18ea30(0x1e0)]==jsObj[_0x18ea30(0x1f8)][_0x3bb047]['AppName']&&_0x4947b4[_0x18ea30(0x1a0)]('.install')[_0x18ea30(0x1a5)](_0x18ea30(0x1b2));}});}var lc=tt=tc=X=Y=0x0,cx=0x64+Xa*0xb4,cy=0x39+Ya*0x61;$(document)[_0x1f29be(0x1ee)](function(_0x5e96df){var _0x20bc6b=_0x1f29be,_0x8d3823=_0x5e96df[_0x20bc6b(0x1c7)],_0x7552fc=_0x5e96df[_0x20bc6b(0x19b)];_0x8d3823>cx&&_0x8d3823<cx+0xaf&&_0x7552fc>cy&&_0x7552fc<cy+0x58?ky=0x1:ky=0x0;;_0x7552fc>0x230&&lc==0x0&&($('#container')[_0x20bc6b(0x1d1)]({'transform':_0x20bc6b(0x1c3),'transition':'1s\x20transform'}),lc=0x1),_0x7552fc<0x5f&&lc==0x1&&($(_0x20bc6b(0x1b1))[_0x20bc6b(0x1d1)]({'transform':_0x20bc6b(0x1c4),'transition':_0x20bc6b(0x1b4)}),lc=0x0);});function getLOG(){var _0x66e78f=_0x1f29be;tc++;if(tc==0x1){$(_0x66e78f(0x1fa))[_0x66e78f(0x1d1)]({'height':'600px','top':'10px','z-index':'15','font-size':_0x66e78f(0x1ab),'left':_0x66e78f(0x1ec),'width':_0x66e78f(0x1bd),'text-align':_0x66e78f(0x1ba)}),$(_0x66e78f(0x1b1))[_0x66e78f(0x1a5)](_0x66e78f(0x1b2)),$(_0x66e78f(0x19d))[_0x66e78f(0x1a5)](_0x66e78f(0x1b2));try{var _0x412ed0=Hisense_GetCountryCode();}catch(_0x5ec6de){var _0x412ed0=_0x66e78f(0x1b6);};try{if(typeof Hisense_installApp!=_0x66e78f(0x1e2))var _0x45e94f='OK';}catch(_0x12878e){var _0x45e94f=_0x66e78f(0x1b6);};try{var _0x4f81fc=Hisense_GetDNS();}catch(_0x4a4977){var _0x4f81fc='error';};try{var _0x4e9b87=Hisense_GetMacAddress();}catch(_0x9186e8){var _0x4e9b87=_0x66e78f(0x1b6);};try{var _0xf27810=Hisense_GetNetType();}catch(_0x56d793){var _0xf27810=_0x66e78f(0x1b6);};consoleGroup(_0x66e78f(0x1ff),_0x66e78f(0x1f1)+str+_0x45e94f,_0x66e78f(0x1a7)+str+_0x412ed0,_0x66e78f(0x1e7)+str+new Date()),consoleGroup(_0x66e78f(0x20b),arr,_0x66e78f(0x1b0)+arm1+_0xf27810+'\x20'+arm2+_0x4f81fc+arm3+_0x4e9b87,arr2);}else $(_0x66e78f(0x1fa))[_0x66e78f(0x1d1)]({'height':_0x66e78f(0x1e6),'top':'645px','z-index':'2','font-size':_0x66e78f(0x1a4),'left':_0x66e78f(0x206),'width':_0x66e78f(0x208),'text-align':'left'}),aboutTV(),tc=0x0,$('#container')['removeClass'](_0x66e78f(0x1b2)),$('.CBYbtn')[_0x66e78f(0x209)]('hide');}function _0x4e24(){var _0x27dec0=['#2980b9','</p>','find','==========>\x20','prop','#empty_tile','1.9rem','addClass','266245TuQMjf','||\x20Country_Code\x20','11215040oIwDtl','.icon\x20img','stringify','16px','.uninstall','\x20app\x20uninstalled\x20success\x20!\x20','object','attr','||\x20NET\x20','#container','hide','click','1s\x20transform','indexOf','error','slideDown','AllApps','6282nxqJic','left','Error\x20uninstall\x20app','log','1240px','#e67e22','white','13555422spbKAQ','\x20vidaa\x20','getItem','translateY(-444px)','translateY(0px)','.png','3801OPJnpu','pageX','clone','<br>FirmWare\x20Version\x20:\x20','center','-38px','AllAppsUpdate','2px\x20solid','</div>','findIndex','.ticon,\x20.btn-danger,\x20.btn-info,\x20.nokey','css','\x20/\x20','info','text','.ticon','.APP','U06','\x20app\x20INSTALLATION\x20COMPLETED\x20!','appid','</div><div\x20class=\x22nam\x22\x20>нажмите\x20OK\x20для\x20установки</div>','getInstalledAppJsonObj\x20fail!','url','.install','<div\x20class=\x22debug\x22>','#f1c40f','name','opera_omi','undefined','browser','18399woyMcV','#ecf0f1','65px','||\x20Date\x20','#006266','<div\x20class=\x22button\x22>УДАЛИТЬ</div>','length','store','20px','1044sesQSb','mousemove','black','images/','||\x20Hisense_installApp\x20','src','animate','<div\x20class=\x22name\x22>','debug','INSTALLATION\x20FAILED','mouseenter','AppInfo','.nam,\x20.name,\x20.V','#debug','groupCollapsed','242HHrLCF','http://136.169.241.17/','html','API\x20LOG','Sorry,\x20your\x20device\x20is\x20not\x20supported','<br>DNS\x20Server\x20:\x20','110px','img/','62291630AdVXxx','ready','100px','2140VnkPdB','1106px','removeClass','data','NET\x20LOG','#000000','slideUp','each','mouseout','U07','setItem','pageY','\x20TV\x20detected<br>Model\x20name\x20:\x20','.CBYbtn'];_0x4e24=function(){return _0x27dec0;};return _0x4e24();}function _0x5d45(_0x59e13c,_0x4c4a32){var _0x4e2496=_0x4e24();return _0x5d45=function(_0x5d45db,_0x2cc1ed){_0x5d45db=_0x5d45db-0x19a;var _0x26573e=_0x4e2496[_0x5d45db];return _0x26573e;},_0x5d45(_0x59e13c,_0x4c4a32);}var _0x238fd2='#4deeea';function colorTABLE(_0x4f80cd,_0x26e3f3){var _0x245417=_0x1f29be;$(_0x245417(0x1f9))[_0x245417(0x1d1)]({'background-color':_0x245417(0x20c)+_0x4f80cd,'color':_0x245417(0x20c)+_0x26e3f3}),$(_0x245417(0x1d0))['css']('border',_0x245417(0x1cd)+_0x4f80cd);var _0xfca26d='70px',_0x1c4020=_0x245417(0x1cb);localStorage[_0x245417(0x19a)]('bc',_0x4f80cd),localStorage['setItem']('c',_0x26e3f3);}function colorTHEME(){var _0x225f7e=_0x1f29be;tt++,$('.icon')['removeClass'](_0x225f7e(0x1b2));switch(tt){case 0x1:colorTABLE(_0x225f7e(0x1df),_0x225f7e(0x20c));break;case 0x2:colorTABLE(_0x225f7e(0x19e),_0x225f7e(0x1bf));break;case 0x3:colorTABLE('#c0392b',_0x225f7e(0x1bf));break;case 0x4:colorTABLE(_0x225f7e(0x1e8),_0x225f7e(0x1bf));break;case 0x5:colorTABLE(_0x225f7e(0x1e5),_0x225f7e(0x1ef));break;case 0x6:colorTABLE(_0x225f7e(0x1be),_0x225f7e(0x1bf)),tt=0x0;break;}}function consoleGroup(_0x45568a,_0x215533,_0x561870,_0x5f4f36){var _0x5df189=_0x1f29be;console[_0x5df189(0x1fb)](_0x45568a),console[_0x5df189(0x1bc)](_0x215533),console[_0x5df189(0x1bc)](_0x561870),console[_0x5df189(0x1bc)](_0x5f4f36),console['groupEnd']();}function refreshAppsOnHisenseUI(_0x541eac){var _0x2c0e23=_0x1f29be,_0x291da1={'type':'APPMessage','MsgType':'appControl','action':'updateAppState','source':_0x2c0e23(0x1e3),'startAppType':0x2,'param':{'event':_0x2c0e23(0x1cc),'SubModuleName':_0x2c0e23(0x1b8),'startFrom':'','appInfo':_0x541eac}};if(!!window['omi_platform'])omi_platform['sendPlatformMessage'](JSON[_0x2c0e23(0x1aa)](_0x291da1));else!!window[_0x2c0e23(0x1e1)]&&opera_omi['sendPlatformMessage'](JSON['stringify'](_0x291da1));}function aboutTV(){var _0x2618a7=_0x1f29be;try{$(_0x2618a7(0x1fa))[_0x2618a7(0x1fe)](_0x2618a7(0x1de)+Hisense_GetBrand()+_0x2618a7(0x1c1)+Hisense_GetOSVersion()+_0x2618a7(0x19c)+Hisense_GetModelName()+_0x2618a7(0x1c9)+Hisense_GetFirmWareVersion()+_0x2618a7(0x201)+Hisense_GetDNS()+_0x2618a7(0x1ce));}catch(_0x254650){consoleGroup('TV','==','TV\x20API\x20not\x20detected','==');}}
+  </script> 
+  
+  <style type="text/css">    
+                          
+*{        
+   margin:0px;
+   padding:0px;      
+}
+
+html {
+    overflow: hidden;
+    font-size: 10px;
+}
+
+body{
+    width:  1280px;
+    height: 720px;
+    background-color: #000000;  
+    font-family:  Arial;   
+    overflow: visible hidden;
+    line-height: 1.3;
+    text-align: center;    
+}
+
+#container{ 
+
+	display: flex;
+	flex-flow: row wrap;
+    width: 1098px;
+    height: 593px;
+    position: relative;    
+    top: 57px;    
+    left: 102px;
+}
+
+.hide {
+
+	display: none !important;
+}
+
+.tile { 
+    position: absolute;  
+    width:167px; 
+    height:67px;
+    display: block; 
+    /*! left:100px; */
+    /*! top:57px; */
+    position: relative;
+    margin: 0px 15px 31px 0px;
+    float: left;   
+}
+
+#debug {
+    color:#babec1;
+    font-size: 1.9rem;  
+    height: 65px;  
+    overflow: hidden;
+    top: 645px;
+    position: absolute;
+    background-color:  #000000; 
+    z-index: 2;
+    padding: 5px 0px 5px 0px;
+    left: 100px;
+    width: 1106px;
+    text-align: left;
+
+
+}
+
+.tile:hover .btn-info , .tile:hover .nokey { 
+    transform: scale(0.85) translate(-137px, -55px);
+    width: 400px;
+    height: 180px; 
+    box-shadow: 0 0 10px 10px #4deeea;    
+    background-color: #000000;   
+    border:2px solid #006266;
+    outline: none; 
+} 
+
+.nam,.name { 
+    padding:1px 0px 1px 0px; 
+    width:100%; 
+    background-color:#000000;
+    font-size: 2.5rem;
+}
+
+.nam {     
+    bottom: 0px;  
+}
+
+.name {       
+    top: 0px;   
+	background-color:#000000;
+    font-weight: bold; 
+}
+
+.text { 
+    font-size: 2.1rem;  
+    text-overflow: ellipsis;  
+    width: 370px;   
+    left: 0px;
+    top:0px;
+    vertical-align:middle;   
+    word-wrap: break-word; 
+    top: 50%;
+    transform: translateY(-53%);
+    line-height: 1.1;  
+    margin: 0px 10px;
+}
+
+.tile:hover .name , .tile:hover .nam , .tile:hover .text,
+.tile:hover .btn-danger,  .tile:hover .btn-info,  .tile:hover .nokey { 
+    opacity: 1;
+    display: block;      
+    color: white; 
+    z-index: 10;   
+}
+
+.tile:hover .btn-info,
+.tile:hover .nokey  {   
+    z-index: 11;   
+}
+
+button, .btn-info, .btn-danger, .name, .nam,  .text, .nokey {   
+    opacity: 0;
+    display: none; 
+    position: absolute;
+	
+}
+
+.ticon { 
+    position: absolute;  
+    font-size: 2.0rem;    
+    top: 0px;
+    color: #ecf0f1;
+    border-radius: 10px;
+    border:2px solid #4deeea; 
+
+    padding:30px 0px 30px 0px;
+    width:100%; 
+    background-color: #000000;
+} 
+
+.APP{
+    position: absolute;
+    top:686px;
+    left: 1200px;
+    font-size: 1.7rem; 
+    color: #c7ccce;
+    z-index: 10;
+    font-weight: 100;
+}
+
+.btn-danger  {     
+    transform: scale(1) translate(-15px, -5px);
+    width: 200px;
+    height: 97px; 
+    box-shadow: 0 0 17px 17px #4deeea;    
+    background-color: #951516;
+    border:2px solid #4deeea; 
+    border-radius:10px; 
+    font-size: 2.2rem; 
+    color: #f7e8d4;
+    line-height: 1.3;
+    z-index: 20;     
+} 
+
+.CBGbtn , .CBYbtn {
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    outline:none;
+    display: block;
+    opacity: 1;
+    color: white;
+    z-index: 10; 
+    text-align: center;
+    font-size: 1.7rem;    
+    width: 169px;
+    top: 673px;   
+    color: #ecf0f1;
+    padding: 5px 0 5px 0;
+    position: absolute;
+}
+
+.CBGbtn {    
+    border-bottom:5px solid #008000ff;   
+    left:  830px;  
+} 
+
+.CBYbtn {  
+    border-bottom:5px solid #f1c40fff; 
+    left:  1010px;  
+}           
+
+.CBGbtn:hover {    
+    background-color:  #008000ff;
+    border-radius:7px;
+} 
+
+.CBYbtn:hover {  
+    background-color:  #f1c40fff; 
+    border-radius:7px;
+    color:black;    
+} 
+
+.icon img { 
+    position: absolute;  
+    width:167px;  /*300 290 280 270 260 250 240 235 230 200  195  190  180   175  170 150 132*/
+    height:86px; /*166 160 155 149 144 138 135 130 127 111  108  105   99   97    95  84  73*/  
+    display: block; 
+    border-radius: 8px;
+    z-index: 1;
+    left: 2px;
+    top: 2px;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(200, 200, 0, 1);
+  z-index: 200;
+}
+
+</style> 
+    
+</head>
+<body class="bg-light">
+    <div id="debug" class="bg-dark text-white"></div></div>
+
+    <div id="container"></div>
+    <div class="bg-secondary tile hide" id="empty_tile" tabindex="0">
+     <div class="icon"> <img src="index.html" /> </div>     
+      <div id="action">    
+            <button type="button"  class="btn btn-info install"></button>           
+            <button type="button" class="btn btn-danger uninstall"></button>
+        <!--    <div class="nokey hide"></div>       -->               
+            <div class="ticon"></div>
+      </div>
+    </div>    
+    <div class="APP"></div>   
+    <button type="btn"  class="CBGbtn" onclick="getLOG();">Get Log</button>
+   <!-- <button type="btn"  class="CBYbtn hide" onclick="colorTHEME();">Change Theme</button> -->
+
+       
+</body>
+
+
+
+</html>
