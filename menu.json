@@ -47,6 +47,19 @@
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
+               "headline": "Ufanet",
+               "text": "Просмотра IPTV от провайдера Ufanet"
+            }
+         },
+         "image": "https://relonir8.github.io/msx/img/ufanet.png",
+         "action": "link:http://webkit.ufanet.platform24.tv/"
+      },
+      {
+         "focus": true,
+         "selection": {
+            "important": true,
+            "action": "update:content:underlay:text",
+            "data": {
                "headline": "DRM-play",
                "text": "IPTV плеер с поддержкой плейлистов в формате m3u, m3u8, stalker-portal, медиатеки. Тестовый плейлист для ознакомления с функциями плеера."
             }
