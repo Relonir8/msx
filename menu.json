@@ -46,6 +46,18 @@
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
+               "headline": "test",
+               "text": "text"
+            }
+         },
+         "image": "",
+         "action": "link:http://msx.benzac.de/services/m3u.php/msx/m3u.php?type=video&mode=extended&url=http://bezbe.my1.ru/tv/zminus.m3u"
+      },
+      {
+         "selection": {
+            "important": true,
+            "action": "update:content:underlay:text",
+            "data": {
                "headline": "YouTube",
                "text": "Oнлайн-сервис для хостинга и просмотра видео"
             }
