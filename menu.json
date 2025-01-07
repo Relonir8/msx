@@ -47,38 +47,14 @@
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
-               "headline": "LAMPA land",
-               "text": "Мод программы Лампа{br}Программа уже настроенная для он-лайн просмотра и просмотра iptv"
+               "headline": "YouTube",
+               "text": "Oнлайн-сервис для хостинга и просмотра видео"
             }
          },
-         "image": "https://wals09.github.io/msx/lampa_land/icon.png",
-         "action": "link:http://lampa.land"
+         "image": "https://wals09.github.io/msx/logon/youtube.png",
+         "action": "link:https://www.youtube.com/tv#/"
       },
-      {
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
-               "headline": "Lampa UnCensored",
-               "text": "Мод программы Лампа{br}c установленым магазином плагинов и другими «плюшками»"
-            }
-         },
-         "image": "https://wals09.github.io/msx/logon/bylampa.png",
-         "action": "link:http://bylampa.online"
-      },
-      {
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
-               "headline": "Prisma TV",
-               "text": "Мод программы Лампа{br}В данный момент находиться в разработке и некоторые функции могут быть недоступны!!!{br}Опубликованно только для ознакомления с программой!!!"
-            }
-         },
-         "image": "https://wals09.github.io/msx/logon/prisma.png",
-         "action": "panel: https://wals09.github.io/msx/prisma/template.json"
-      },
-      {
+            {
          "selection": {
             "important": true,
             "action": "update:content:underlay:text",
@@ -119,48 +95,48 @@
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
+               "headline": "LAMPA land",
+               "text": "Мод программы Лампа{br}Программа уже настроенная для он-лайн просмотра и просмотра iptv"
+            }
+         },
+         "image": "https://wals09.github.io/msx/lampa_land/icon.png",
+         "action": "link:http://lampa.land"
+      },
+      {
+         "selection": {
+            "important": true,
+            "action": "update:content:underlay:text",
+            "data": {
+               "headline": "Lampa UnCensored",
+               "text": "Мод программы Лампа{br}c установленым магазином плагинов и другими «плюшками»"
+            }
+         },
+         "image": "https://wals09.github.io/msx/logon/bylampa.png",
+         "action": "link:http://bylampa.online"
+      },
+      {
+         "selection": {
+            "important": true,
+            "action": "update:content:underlay:text",
+            "data": {
+               "headline": "Prisma TV",
+               "text": "Мод программы Лампа{br}В данный момент находиться в разработке и некоторые функции могут быть недоступны!!!{br}Опубликованно только для ознакомления с программой!!!"
+            }
+         },
+         "image": "https://wals09.github.io/msx/logon/prisma.png",
+         "action": "panel: https://wals09.github.io/msx/prisma/template.json"
+      },
+      {
+         "selection": {
+            "important": true,
+            "action": "update:content:underlay:text",
+            "data": {
                "headline": "Forkplayer",
                "text": "Bеб-браузер, адаптированный для просмотра специальных интернет-страниц с автоматически обновляемыми плейлистами, предоставляет возможность прямо с браузера смотреть фильмы, ТВ-каналы, слушать музыку, радиостанции"
             }
          },
          "image": "https://wals09.github.io/msx/logon/fork_com.png",
          "action": "link:http://browser.appfxml.com/"
-      },
-      {
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
-               "headline": "GetsTV",
-               "text": " Фильмы и Мультфильмы. Крупнейшая база на любой вкус, обновляется ежедневно, новинки появляются сразу после премьеры в кинотеатре."
-            }
-         },
-         "image": "https://wals09.github.io/msx/logon/getstv.png",
-         "action": "panel:http://lg.getstv.ru/msx/msx.json"
-      },
-      {
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
-               "headline": "Яндекс Видео",
-               "text": "«Яндекс Видео» — сервис поиск по видеороликам от Яндекса с возможностью просмотра большинства найденных роликов на странице результатов поиска. Поиск производится на сторонних видеохостингах и новостных интернет-ресурсах."
-            }
-         },
-         "image": "https://wals09.github.io/msx/logon/yandex.png",
-         "action": "link:https://yandex.ru/video/tvapp/?ui=tvapp"
-      },
-      {
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
-               "headline": "YouTube",
-               "text": "Oнлайн-сервис для хостинга и просмотра видео"
-            }
-         },
-         "image": "https://wals09.github.io/msx/logon/youtube.png",
-         "action": "link:https://www.youtube.com/tv#/"
       }
    ]
 }
