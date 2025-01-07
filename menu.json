@@ -167,11 +167,11 @@
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
-               "headline": "YOUTUBE KIDS",
-               "text": "Oтдельная версия Youtube, нацеленная исключительно на детей."
+               "headline": "YouTube Proxy",
+               "text": "Oтдельная версия Youtube, которая работает через Прокси. Могут быть ошибки и баги"
             }
          },
-         "image": "https://wals09.github.io/msx/logon/ytkids.png",
+         "image": "https://wals09.github.io/msx/logon/youtube.png",
          "action": "link:https://webproxy.lumiproxy.com/request?area=PL&u=https://www.youtube.com/tv#/"
       },
             {
