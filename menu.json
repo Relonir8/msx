@@ -51,7 +51,7 @@
             }
          },
          "image": "https://relonir8.github.io/msx/zminus/zminus.png",
-         "action": "link:https://relonir8.github.io/msx/zminus/zminus.tv.json"
+         "action": "content:https://relonir8.github.io/msx/zminus/zminus1.json"
       },
       {
          "selection": {
