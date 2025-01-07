@@ -130,6 +130,18 @@
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
+               "headline": "VoKINO",
+               "text": "Приложение для просмотра различного медиаконтента: фильмов, сериалов, аниме, а так же просмотр торрентов"
+            }
+         },
+         "image": "https://github.com/wals09/msx/blob/main/logo/vokino.png?raw=true",
+         "action": "link: http://web.vokino.tv/"
+      },
+      {
+         "selection": {
+            "important": true,
+            "action": "update:content:underlay:text",
+            "data": {
                "headline": "Forkplayer",
                "text": "Bеб-браузер, адаптированный для просмотра специальных интернет-страниц с автоматически обновляемыми плейлистами, предоставляет возможность прямо с браузера смотреть фильмы, ТВ-каналы, слушать музыку, радиостанции"
             }
