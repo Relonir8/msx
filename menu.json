@@ -46,12 +46,12 @@
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
-               "headline": "Zminus Playlist",
-               "text": "Бесплатные ТВ каналы от Zminus"
+               "headline": "Ottplayer",
+               "text": "Cервис, позволяющий собрать все ваше IP-телевидение в один плейлист, настроить порядок каналов, получить электронный программный гид."
             }
          },
-         "image": "https://relonir8.github.io/msx/zminus/zminus.png",
-         "action": "content:https://relonir8.github.io/msx/zminus/zminus1.json"
+         "image": "https://wals09.github.io/msx/logon/ottplayer.png",
+         "action": "link:http://widget.ottplayer.tv"
       },
       {
          "selection": {
