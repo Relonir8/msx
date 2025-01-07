@@ -1,0 +1,20 @@
+{
+   "name": "Zminus_TV",
+   "version": "∞",
+   "headline": "Zminus_TV",
+   "dictionary": "https://wals09.github.io/msx/dictionary.json",
+   "menu": [
+      {
+         "type": "separator"
+      },
+      {
+         "image": "https://mults.info/img/collection.png",
+         "label": "Каналы",
+         "extensionLabel": "",
+         "data": "user:http://msx.benzac.de/services/m3u.php/msx/m3u.php?type=video&mode=extended&url=https://relonir8.github.io/msx/zminus/zminus.m3u"
+      },
+      {
+         "type": "separator"
+      }
+   ]
+}
