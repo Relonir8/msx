@@ -51,7 +51,7 @@
             }
          },
          "image": "",
-         "action": "user:http://msx.benzac.de/services/m3u.php/msx/m3u.php?type=video&mode=extended&url=http://bezbe.my1.ru/tv/zminus.m3u"
+         "action": "user:http://msx.benzac.de/services/m3u.php/msx/m3u.php?type=video&url=http://bezbe.my1.ru/tv/zminus.m3u"
       },
       {
          "selection": {
