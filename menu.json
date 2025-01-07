@@ -173,18 +173,6 @@
          },
          "image": "https://wals09.github.io/msx/logon/youtube.png",
          "action": "link:https://webproxy.lumiproxy.com/request?area=PL&u=https://www.youtube.com/tv#/"
-      },
-            {
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
-               "headline": "Piped",
-               "text": "Альтернативный YouTube, если у вас не работает классический. Автоматически пропускает рекламу в роликах"
-            }
-         },
-         "image": "https://relonir8.github.io/msx/img/piped.png",
-         "action": "link:https://relonir8.github.io/msx/piped.html"
       }
    ]
 }
