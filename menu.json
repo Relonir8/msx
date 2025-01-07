@@ -161,6 +161,6 @@
          },
          "image": "https://wals09.github.io/msx/logon/youtube.png",
          "action": "link:https://www.youtube.com/tv#/"
-      },
+      }
    ]
 }
