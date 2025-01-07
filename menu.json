@@ -46,8 +46,8 @@
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
-               "headline": "test",
-               "text": "text"
+               "headline": "Zminus Playlist",
+               "text": "Бесплатные ТВ каналы от Zminus"
             }
          },
          "image": "",
