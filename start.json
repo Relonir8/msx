@@ -2,5 +2,5 @@
     "name": "Relonir_MSX",
     "version": "∞",
     "parameter": "content: https://relonir8.github.io/msx/menu.json",
-    "dictionary": "https://relonir8.github.io/msx/dictionary.json"
+    "dictionary": "https://wals09.github.io/msx/dictionary.json"
 }
