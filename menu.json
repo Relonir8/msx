@@ -79,7 +79,43 @@
          "image": "https://wals09.github.io/msx/logon/youtube.png",
          "action": "link:https://www.youtube.com/tv#/"
       },
-            {
+      {
+         "selection": {
+            "important": true,
+            "action": "update:content:underlay:text",
+            "data": {
+               "headline": "Lampa UnCensored",
+               "text": "Мод программы Лампа{br}c установленым магазином плагинов и другими «плюшками»"
+            }
+         },
+         "image": "https://wals09.github.io/msx/logon/bylampa.png",
+         "action": "link:http://bylampa.online"
+      },
+      {
+         "selection": {
+            "important": true,
+            "action": "update:content:underlay:text",
+            "data": {
+               "headline": "LAMPA land",
+               "text": "Мод программы Лампа{br}Программа уже настроенная для он-лайн просмотра и просмотра iptv"
+            }
+         },
+         "image": "https://wals09.github.io/msx/lampa_land/icon.png",
+         "action": "link:http://lampa.land"
+      },
+      {
+         "selection": {
+            "important": true,
+            "action": "update:content:underlay:text",
+            "data": {
+               "headline": "Prisma TV",
+               "text": "Мод программы Лампа{br}В данный момент находиться в разработке и некоторые функции могут быть недоступны!!!{br}Опубликованно только для ознакомления с программой!!!"
+            }
+         },
+         "image": "https://wals09.github.io/msx/logon/prisma.png",
+         "action": "panel: https://wals09.github.io/msx/prisma/template.json"
+      },
+      {
          "selection": {
             "important": true,
             "action": "update:content:underlay:text",
@@ -114,42 +150,6 @@
          },
          "image": "https://wals09.github.io/msx/logon/movielab.png",
          "action": "menu:https://movielab.fun/msx/menu.json"
-      },
-      {
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
-               "headline": "LAMPA land",
-               "text": "Мод программы Лампа{br}Программа уже настроенная для он-лайн просмотра и просмотра iptv"
-            }
-         },
-         "image": "https://wals09.github.io/msx/lampa_land/icon.png",
-         "action": "link:http://lampa.land"
-      },
-      {
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
-               "headline": "Lampa UnCensored",
-               "text": "Мод программы Лампа{br}c установленым магазином плагинов и другими «плюшками»"
-            }
-         },
-         "image": "https://wals09.github.io/msx/logon/bylampa.png",
-         "action": "link:http://bylampa.online"
-      },
-      {
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
-               "headline": "Prisma TV",
-               "text": "Мод программы Лампа{br}В данный момент находиться в разработке и некоторые функции могут быть недоступны!!!{br}Опубликованно только для ознакомления с программой!!!"
-            }
-         },
-         "image": "https://wals09.github.io/msx/logon/prisma.png",
-         "action": "panel: https://wals09.github.io/msx/prisma/template.json"
       },
       {
          "selection": {
