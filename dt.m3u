@@ -1,4 +1,10 @@
-#EXTINF:-1 tvg-id="no_epg" tvg-logo="https://static10.tgstat.ru/channels/_0/c5/c5d4392f3362c41844450fddcf07931f.jpg" group-title="ИНФО", Сборка ТВ каналов✅
+#EXTINF:-1 tvg-id="no_epg" tvg-logo="https://iptvshared.ucoz.net/20240413082653.png" group-title="ИНФО",HTTPS://T.ME/IPTV_SHARED
+https://iptvshared.ucoz.net/YouCut_20241002_033317533.mp4
+
+#EXTINF:-1 tvg-id="no_epg" tvg-logo="https://iptvshared.ucoz.net/gen.php.png" group-title="ИНФО", Поддержка проекта
+https://iptvshared.ucoz.net/YouCut_20241002_025528018.mp4
+
+#EXTINF:-1 tvg-id="no_epg" tvg-logo="https://static10.tgstat.ru/channels/_0/c5/c5d4392f3362c41844450fddcf07931f.jpg" group-title="ИНФО", ОБНОВЛЕНИЕ: 11.01.2025✅
 https://rt-vlg-nn-htlive.cdn.ngenix.net/hls/CH_R05_KAMINTV/variant.m3u8
 
 #EXTINF:-1 tvg-id="pervy" tvg-logo="http://i120.fastpic.org/big/2022/0731/5a/975757b7227dd15519c6a0e0d5f0065a.png" catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="Эфирные",Первый канал
@@ -1945,555 +1951,6 @@ https://live-mirror-18.ott.tricolor.tv/dtv/id1017_MSKSG-PVR-1--Kinozal29_SD/04/p
 #EXTINF:-1 tvg-logo="https://us.123rf.com/450wm/captainvector/captainvector2208/captainvector220809083/189746183-filmstrip-and-popcorn-design.jpg" tvg-id="no_epg_cinema" group-title="Кинозалы 2", МАЖОР
 https://live-mirror-19.ott.tricolor.tv/dtv/id1018_MSKSG-PVR-1--Kinozal30_HD/02/plst.m3u8?drmreq=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfdHlwZSI6ImFwdHBfb3R0IiwiY2xhc3MiOiJCUk9XU0VSIiwiZHJlaWQiOiI1NDIxOTAwNzk1ODc0MiIsImV4cCI6MTczNjYyMDAyMSwiaHdpZCI6ImJhNDM4OGI2N2NlNjg5ZmMwYWRlODE3OTlhYWNkZDZhNzg2ZmMxZWI5MzQ4M2YwYTEwMjNhZTViMmMyNDYwM2EiLCJsYXN0X3JlcV9kYXRlIjoxNzM2MDE1MjIxLCJzZXNzaW9uX2lkIjoiOTJhYTUyNTU3NGNmZDI0Yjc0ODNkNzUxZjI4OGIwOWUiLCJ0b2tlbl90eXBlIjoiQ29udGVudEFjY2Vzc1Rva2VuIiwidHlwZSI6Ik1PWklMTEEifQ.uLo0cmjeeqr30_OOnEnsGj1VydNMcMt9G-Rr1Tjjt_Q
 
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Premiere
-http://live.admuspeh.my/8468/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Кинозал Premiere 1 HD
-http://live.admuspeh.my/8873/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Кинозал Premiere 2 HD
-http://live.admuspeh.my/8872/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Кинозал Premiere 3 HD
-http://live.admuspeh.my/8883/video.m3u8?token=iptvshared
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://sun9-27.userapi.com/impg/nxs4vZXuZe8YqE3omD3wIx0gZVnSSwwFvR5Zrg/GulhRQ7aNHo.jpg?size=300x236&quality=96&proxy=1&sign=201b00725ec80ea2785cc3279768b5d2&type=album" group-title="Кинозалы BCU [нестабильные]", BCU Christmas HD
-http://live.admuspeh.my/8886/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Мультсериал HD
-http://live.admuspeh.my/8874/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Kids+
-http://live.admuspeh.my/8454/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Little
-http://live.admuspeh.my/8979/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Кинозал СССР
-http://live.admuspeh.my/8875/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Russia 90s
-http://live.admuspeh.my/8980/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU VHS
-http://live.admuspeh.my/8908/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Action HD
-http://live.admuspeh.my/8876/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Cosmo
-http://live.admuspeh.my/8975/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Catastrophe HD
-http://live.admuspeh.my/8877/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Charm
-http://live.admuspeh.my/8978/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Comedy HD
-http://live.admuspeh.my/8878/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Fantastic HD
-http://live.admuspeh.my/8879/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU FilMystic HD
-http://live.admuspeh.my/8880/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU History HD
-http://live.admuspeh.my/8881/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Reality
-http://live.admuspeh.my/8910/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Marvel HD
-http://live.admuspeh.my/8882/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Romantic HD
-http://live.admuspeh.my/8884/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Stars HD
-http://live.admuspeh.my/8885/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU RUSerial HD
-http://live.admuspeh.my/8888/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Russian
-http://live.admuspeh.my/8457/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Сваты HD
-http://live.admuspeh.my/8889/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Criminal HD
-http://live.admuspeh.my/8890/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Cinema HD
-http://live.admuspeh.my/8891/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Cinema+ HD
-http://live.admuspeh.my/8892/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Kinorating
-http://live.admuspeh.my/8455/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU Survival
-http://live.admuspeh.my/8912/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BCU [нестабильные]", BCU TruMotion
-http://live.admuspeh.my/8977/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Apocalypse HD
-http://live.admuspeh.my/8441/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX СССР 4K
-http://live.admuspeh.my/8445/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Cyber
-http://live.admuspeh.my/8419/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Fantasy
-http://live.admuspeh.my/8430/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Franchise
-http://live.admuspeh.my/8982/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Gangster
-http://live.admuspeh.my/8985/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Ghost
-http://live.admuspeh.my/8428/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Hybrid
-http://live.admuspeh.my/8983/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX M.Serial
-http://live.admuspeh.my/8988/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Memory
-http://live.admuspeh.my/8987/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Oscar
-http://live.admuspeh.my/8986/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Premiere 4K
-http://live.admuspeh.my/8452/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Remast 4K
-http://live.admuspeh.my/8433/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Serial
-http://live.admuspeh.my/8433/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Spy
-http://live.admuspeh.my/8354/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX ULTRASTARS
-http://live.admuspeh.my/8444/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Western
-http://live.admuspeh.my/8417/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Zombie
-http://live.admuspeh.my/8418/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX SportCast
-http://live.admuspeh.my/8447/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Relax 4K
-http://live.admuspeh.my/8338/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Anime
-http://live.admuspeh.my/8984/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX AutoTrend HD
-http://live.admuspeh.my/8440/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Docu
-http://live.admuspeh.my/8424/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]", BOX Gurman HD
-http://live.admuspeh.my/8439/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]",BOX Kosmo 4K
-http://live.admuspeh.my/8448/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]",BOX Mayday
-http://live.admuspeh.my/8434/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]",BOX Music 4K
-http://live.admuspeh.my/8990/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы BOX [нестабильные]",BOX Travel
-http://live.admuspeh.my/8416/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Celebrity HD
-http://live.admuspeh.my/8991/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Flip UHD
-http://live.admuspeh.my/8404/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Love HD
-http://live.admuspeh.my/8328/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM NewFilm 1 HD
-http://live.admuspeh.my/8741/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM NewFilm 2 HD
-http://live.admuspeh.my/8742/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM NewFilm 3 HD
-http://live.admuspeh.my/8743/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM NewFilm RU HD
-http://live.admuspeh.my/8706/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM UFO HD
-http://live.admuspeh.my/8410/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM USSR Детектив HD
-http://live.admuspeh.my/8656/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM USSR Комедия HD
-http://live.admuspeh.my/8744/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Боевик HD
-http://live.admuspeh.my/8745/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Боевик Classic HD
-http://live.admuspeh.my/8411/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Драма HD
-http://live.admuspeh.my/8894/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM История HD
-http://live.admuspeh.my/8933/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Катастрофа HD
-http://live.admuspeh.my/8746/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Киберпанк HD
-http://live.admuspeh.my/8545/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Комедия HD
-http://live.admuspeh.my/8744/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Крутые 90-е HD
-http://live.admuspeh.my/8547/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Кунг-Фу HD
-http://live.admuspeh.my/8559/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Роскино HD
-http://live.admuspeh.my/8709/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Сваты HD
-http://live.admuspeh.my/8893/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Семейный 1 HD
-http://live.admuspeh.my/8442/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Семейный 2 HD
-http://live.admuspeh.my/8449/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Скорость HD
-http://hls127.homeiptv.org:8880/minimax-skorost-m4f/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Спорт HD
-http://live.admuspeh.my/8652/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Супергерои HD
-http://live.admuspeh.my/8710/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Ужасы HD
-http://live.admuspeh.my/8725/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Фобия HD
-http://live.admuspeh.my/8994/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Tom And Jerry HD
-http://live.admuspeh.my/8997/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM Walt Disney HD
-http://live.admuspeh.my/8914/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы MM [нестабильные]",MM USSR Мультфильм HD
-http://live.admuspeh.my/8913/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan Лесник
-http://live.admuspeh.my/8767/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan Ментовские Войны
-http://live.admuspeh.my/8802/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan VHS
-http://live.admuspeh.my/8807/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", Cartoons 90
-http://live.admuspeh.my/8812/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan Скорая помощь
-http://live.admuspeh.my/8821/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan ПёС + Лихач
-http://live.admuspeh.my/8824/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan Сваты
-http://live.admuspeh.my/8825/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan Air Crash
-http://live.admuspeh.my/8826/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan Симпсоны
-http://live.admuspeh.my/8833/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", Cartoons Big
-http://live.admuspeh.my/8866/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", Cartoons Short
-http://live.admuspeh.my/8867/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan РуКино
-http://live.admuspeh.my/8871/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan Marvel
-http://live.admuspeh.my/8951/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan
-http://live.admuspeh.my/8952/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan Thriller
-http://live.admuspeh.my/8954/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan Melodrama
-http://live.admuspeh.my/8955/video.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan Катастрофы
-http://live.admuspeh.my/8957/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan Комедийные сериалы
-http://live.admuspeh.my/8958/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan Top
-http://live.admuspeh.my/8959/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan Ужасы
-http://live.admuspeh.my/8960/index.m3u8?token=iptvshared
-
-#EXTINF:-1 group-title="Кинозалы CineMan [нестабильные]", CineMan MiniSeries
-http://live.admuspeh.my/8961/index.m3u8?token=iptvs
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Новое кино
-https://fs2.persik.by/NovoeKino10/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Вдохновение HD
-https://fs2.persik.by/Vdohnovenie/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",МОЛОДОСТЬ
-https://fs2.persik.by/Molodost9/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",В кругу семьи HD
-http://fs2.persik.by/V_krugu_semii4/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Семейное HD
-http://fs2.persik.by/Semejnoe10/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",ЛЕГКОЕ КИНО
-http://fs2.persik.by/Legkoe_Kino11/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Кино выходного дня
-http://fs2.persik.by/Kino_vihodnogo_dnia8/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Экранизации HD
-https://fs2.persik.by/Ekranizacii13/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Известные актёры
-http://fs2.persik.by/Izvestnie_akteri6/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",ВИЦИН
-http://fs2.persik.by/Vicin_10/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",МИРОНОВ
-https://fs2.persik.by/Mironov8/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",ЛЕОНОВ
-https://fs2.persik.by/Leonov_7/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",АНТИСТРЕС
-http://fs2.persik.by/Kino_Antistress9/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Английские субтитры
-http://fs2.persik.by/Angliyskie_subtitry6/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Остросюжетные сериалы
-http://fs2.persik.by/OstrosuzhetnieSerialy8/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Топ кино
-http://fs2.persik.by/TopKino/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",НОВИНКИ fas-tv.com
-https://fs2.persik.by/Novinki9/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Киномикс
-https://fs2.persik.by/Kino_Miks13/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",БОЕВИКИ
-http://fs2.persik.by/Boeviki_16/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",ВАН ДАММ
-https://fs2.persik.by/VanDam/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Зарубежное кино
-http://fs2.persik.by/Zarubezhnoe_kino_10/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Любовь и Детективы
-http://fs2.persik.by/Lubov_Detektivi8/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Путешествие во времени
-http://fs2.persik.by/Puteshestvie_vo_vremeni11/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Фестивальное кино
-https://fs2.persik.by/FestivalnoeKino9/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Рекомендуем
-https://fs2.persik.by/Rekomenduem7/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Отечественное кино HD
-https://fs2.persik.by/Otechestvennoe4/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Про родителей HD
-http://fs2.persik.by/Pro_roditeley9/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Семейные фильмы
-http://fs2.persik.by/Semejnie_Filmy6/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Популярное кино
-https://fs2.persik.by/Populyarnoe_Kino_11/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Европейское кино
-https://fs2.persik.by/EvropejskoeKino15/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Triller
-https://fs2.persik.by/Triller1/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Триллеры-Боевики
-http://fs2.persik.by/Trillery_Boeviki7/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Триллеры США
-https://fs2.persik.by/Trillery_USA_12/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Триллеры-Драма
-http://fs2.persik.by/Trillery_Drama5/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Американские комедии
-https://fs2.persik.by/Amerikanskie_Komedii_13/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Новогодние фильмы
-http://fs2.persik.by/Novogodnie_Filmy_9/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Рождественские фильмы
-http://fs2.persik.by/Rozhdestvenskie_filmy5/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",ДРУЖБА
-http://fs2.persik.by/Druzhba8/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Кино про дружбу
-http://fs2.persik.by/Pro_druzhbu7/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Вторая мировая
-http://fs2.persik.by/Vtoraja_Mirovaja_8/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",ФЕСТИВАЛЬНОЕ КИНО
-http://fs2.persik.by/FestivalnoeKino9/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Комедийные сериалы
-http://fs2.persik.by/Komedijnie_seriali6/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",ДАВАЙ ПОЖЕНИМСЯ
-http://fs2.persik.by/Davaj_Pozhenimsya7/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",РОМАНТИЧЕСКИЕ
-https://fs2.persik.by/Romanticheskie9/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Кино по книгам
-https://fs2.persik.by/Kino_po_knigam10/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Зомби-апокалипсис
-http://fs2.persik.by/Zombi_apokalipsis8/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Маньяки
-http://fs2.persik.by/Manjaki6/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]", Аниме HD
-http://fs2.persik.by/Anime6/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]", Сказки HD
-http://fs2.persik.by/Skazki7/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Детские фильмы
-https://fs2.persik.by/DetskieFilmy5/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Детские песни
-https://fs2.persik.by/DetskiePesni5/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",DJ HD
-https://fs2.persik.by/DJ5/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Hits HD
-http://fs2.persik.by/Hits5/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",POP-ROCK HD
-https://fs2.persik.by/Pop_Rock3/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Рэп HD
-http://fs2.persik.by/Rap2/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Best clips HD
-https://fs2.persik.by/Best_clips1/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Concerts HD
-https://fs2.persik.by/Concerts4/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Sluhay.by COVER HD
-https://fs2.persik.by/Sluhay_COVER2/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Sluhay.by EDM HD
-https://fs2.persik.by/Sluhay_EDM/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Sluhay.by LIVE HD
-https://fs2.persik.by/Sluhay_LIVE2/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Sluhay.by MOVA HD
-https://fs2.persik.by/Sluhay_MOVA2/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Sluhay.by RADIO HD
-https://fs2.persik.by/Sluhay_RADIO2/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Sluhay.by RAP HD
-https://fs2.persik.by/Sluhay_RAP/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Sluhay Rock HD
-https://fs2.persik.by/Sluhay_Rock/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",ТЕХНО
-https://fs2.persik.by/Techno3/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Synthwave HD
-http://fs2.persik.by/Synthwave/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",КОСМОС
-http://fs2.persik.by/Kosmo7/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",ДОКУМЕНТАЛЬНОЕ КИНО
-http://fs2.persik.by/DokumentalnoeKino4/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",ДОКУМЕНТАЛЬНОЕ
-http://fs2.persik.by/Dokumentalnoe4/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",Relax HD
-https://fs2.persik.by/Relax4/index.m3u8
-
-#EXTINF:-1 tvg-id="no_epg_cinema" tvg-logo="https://tvnews.by/uploads/posts/2015-04/1429716478_persik-logo.png" group-title="Кинозалы ПерсикТВ [нестабильные]",MOVIE HD
-http://fs2.persik.by/Movie2/index.m3u8
-
 #EXTINF:-1 tvg-logo="http://only4.tv/ch/822.png" catchup="append" catchup-days="3" catchup-source="?offset=-${offset}&utcstart=${timestamp}" group-title="Детские", Карусель
 http://zabava-htlive.cdn.ngenix.net/hls/CH_KARUSEL/variant.m3u8
 
@@ -3900,3 +3357,247 @@ https://stream-msk-17.ott.tricolor.tv/dtv/id957_MSKSG-PVR-1--novoye_radio/01/pls
 
 #EXTINF:-1 tvg-logo="https://www.radiogrom.com/paint_new/logo__rus_big/buryad_fm.jpg" tvg-id="no_epg_radio" group-title="Радио", Буряд FM
 https://stream-msk-17.ott.tricolor.tv/dtv/id960_MSKSG-PVR-1--Buraad/01/plst.m3u8?drmreq=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfdHlwZSI6ImFwdHBfb3R0IiwiY2xhc3MiOiJCUk9XU0VSIiwiZHJlaWQiOiI1NDIxOTAwNzk1ODc0MiIsImV4cCI6MTczNjYyMDAyMSwiaHdpZCI6ImJhNDM4OGI2N2NlNjg5ZmMwYWRlODE3OTlhYWNkZDZhNzg2ZmMxZWI5MzQ4M2YwYTEwMjNhZTViMmMyNDYwM2EiLCJsYXN0X3JlcV9kYXRlIjoxNzM2MDE1MjIxLCJzZXNzaW9uX2lkIjoiOTJhYTUyNTU3NGNmZDI0Yjc0ODNkNzUxZjI4OGIwOWUiLCJ0b2tlbl90eXBlIjoiQ29udGVudEFjY2Vzc1Rva2VuIiwidHlwZSI6Ik1PWklMTEEifQ.uLo0cmjeeqr30_OOnEnsGj1VydNMcMt9G-Rr1Tjjt_Q
+
+#EXTINF:-1 group-title="Взрослые [ВХОД СТРОГО 18+]", Кино 18+ International
+https://v2.catcast.tv/content/40381/index.m3u8
+
+#EXTINF:-1 tvg-id="playboy-tv" group-title="Взрослые [ВХОД СТРОГО 18+]", Playboy TV
+http://190.11.225.124:5000/live/playboy_hd/playlist.m3u8
+
+#EXTINF:-1 tvg-id="exxxotica" group-title="Взрослые [ВХОД СТРОГО 18+]", Exxxotica
+http://31.148.48.15:80/O-la-la/index.m3u8
+
+#EXTINF:-1 tvg-id="shalun" group-title="Взрослые [ВХОД СТРОГО 18+]", Шалун HD
+http://88.218.242.237:8000/play/a00h
+
+#EXTINF:-1 tvg-id="hustler-hd" group-title="Взрослые [ВХОД СТРОГО 18+]", Hustler HD
+http://cdn-nvm-chicago3.lolokoko.tv/HUSTLER.stream/chunks.m3u8
+
+#EXTINF:-1 tvg-id="redlight-hd" group-title="Взрослые [ВХОД СТРОГО 18+]", Redlight HD
+http://cdn-nvm-chicago3.lolokoko.tv/REDLIGHT.stream/chunks.m3u8
+
+#EXTINF:-1 tvg-id="private-tv" group-title="Взрослые [ВХОД СТРОГО 18+]", Private HD
+http://cdn-nvm-chicago3.lolokoko.tv/PRIVATE.stream/chunks.m3u8
+
+#EXTINF:-1 tvg-id="xxl-xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", XXL
+https://cdn-nvm-chicago3.lolokoko.tv/xxl.stream/chunks.m3u8
+
+#EXTINF:-1 tvg-id="digital-desire" group-title="Взрослые [ВХОД СТРОГО 18+]", Digital Desire
+http://88.212.7.11/live/test_desire_hd_hevc/playlist.m3u8
+
+#EXTINF:-1 tvg-id="brazzers-tv-europe" group-title="Взрослые [ВХОД СТРОГО 18+]", Brazzers TV Europe
+http://88.212.7.11/live/test_brazzers_hd_hevc/playlist.m3u8
+
+#EXTINF:-1 tvg-id="dorcel" group-title="Взрослые [ВХОД СТРОГО 18+]", Dorcel TV HD
+http://88.212.7.11/live/test_dorcel_hd_hevc/playlist.m3u8
+
+#EXTINF:-1 tvg-id="eroxxxhd" group-title="Взрослые [ВХОД СТРОГО 18+]",Eroxxx HD
+http://88.212.7.11/live/test_eroxxx_hd_hevc/playlist.m3u8
+
+#EXTINF:-1 tvg-id="erox" group-title="Взрослые [ВХОД СТРОГО 18+]",Erox
+http://88.212.7.11/live/test_erox_hd_hevc/playlist.m3u8
+
+#EXTINF:-1 group-title="Взрослые [ВХОД СТРОГО 18+]", Extasy TV
+http://88.212.7.11/live/test_extasy_hd_hevc/playlist.m3u8
+
+#EXTINF:-1 tvg-id="babes-tv" group-title="Взрослые [ВХОД СТРОГО 18+]",Babes TV
+http://88.212.7.11/live/test_basbes_hd_hevc/playlist.m3u8
+
+#EXTINF:-1 tvg-id="no_epg_xxx" tvg-logo="https://www.ifcmedia.sk/wp-content/uploads/2021/03/image-18-2048x902.png" group-title="Взрослые [ВХОД СТРОГО 18+]", Leo TV
+http://88.212.7.11/live/test_leo_hd_hevc/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.goiptv.top/upload/REALITY-KINGS-TV-LOGO.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Reality Kings TV
+http://88.212.7.11/live/test_realitykings_sd_hevc/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://iptvx.one/picons/passionxxx.png" tvg-id="passionxxx" group-title="Взрослые [ВХОД СТРОГО 18+]", PassionXXX HD
+https://5f22d76e220e1.streamlock.net/canale9/canale9/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/99/Adulttime-logo.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", AdultTime 1
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563023.mp4
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/99/Adulttime-logo.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", AdultTime 2
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563024.mp4
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/99/Adulttime-logo.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", AdultTime 3
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563025.mp4
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/99/Adulttime-logo.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", AdultTime 4
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563022.mp4
+
+#EXTINF:-1 tvg-logo="https://i124.fastpic.org/big/2024/1025/89/f51256f2bf9c6aa55e69f3582725d389.webp" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", 5KTEENS
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563005.mp4
+
+#EXTINF:-1 tvg-logo="https://iptvx.one/picons/tiny4k.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", TINY4K
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/558613.mp4
+
+#EXTINF:-1 tvg-logo="https://cdn-avatars.faphog.com/redgifs/images/authors/a30/teamskeet.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", TEAMSKEET 1
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563026.mp4
+
+#EXTINF:-1 tvg-logo="https://cdn-avatars.faphog.com/redgifs/images/authors/a30/teamskeet.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", TEAMSKEET 2
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563027.mp4
+
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Iv2QwGI1KqI/maxresdefault.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", BackroomCasting
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563048.mp4
+
+#EXTINF:-1 tvg-logo="https://static01-cms-fame.gammacdn.com/dfxtra/m/wz68hxf0fcgoko4g/dfxtra-logo.svg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", DFXtra
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563075.mp4
+
+#EXTINF:-1 tvg-logo="https://cammodelagency.com/wp-content/uploads/2022/11/mofos_logo-blk.png.webp" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", MOFOS 1
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/557670.mp4
+
+#EXTINF:-1 tvg-logo="https://cammodelagency.com/wp-content/uploads/2022/11/mofos_logo-blk.png.webp" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", MOFOS 2
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/557671.mp4
+
+#EXTINF:-1 tvg-logo="https://ih1.redbubble.net/image.2491733678.9407/st,small,507x507-pad,600x600,f8f8f8.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Public Agent 1
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563264.mp4
+
+#EXTINF:-1 tvg-logo="https://ih1.redbubble.net/image.2491733678.9407/st,small,507x507-pad,600x600,f8f8f8.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Public Agent 2
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/557669.mp4
+
+#EXTINF:-1 tvg-logo="https://ih1.redbubble.net/image.2491733678.9407/st,small,507x507-pad,600x600,f8f8f8.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Public Agent 3
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/557672.mp4
+
+#EXTINF:-1 tvg-logo="https://aan.xxx/wp-content/uploads/2021/05/Pure-Taboo.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", PureTaboo
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563267.mp4
+
+#EXTINF:-1 tvg-logo="https://milovana.com/gx/2009/kink-logo.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", SexAndSubmission
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563270.mp4
+
+#EXTINF:-1 tvg-logo="https://invezz.com/wp-content/uploads/2021/11/where-to-buy-the-taboo-token.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Taboo Heat 1
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563293.mp4
+
+#EXTINF:-1 tvg-logo="https://invezz.com/wp-content/uploads/2021/11/where-to-buy-the-taboo-token.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Taboo Heat 2
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563294.mp4
+
+#EXTINF:-1 tvg-logo="https://invezz.com/wp-content/uploads/2021/11/where-to-buy-the-taboo-token.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Taboo Heat 3
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563295.mp4
+
+#EXTINF:-1 tvg-logo="https://invezz.com/wp-content/uploads/2021/11/where-to-buy-the-taboo-token.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Taboo Heat 4
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563296.mp4
+
+#EXTINF:-1 tvg-logo="https://invezz.com/wp-content/uploads/2021/11/where-to-buy-the-taboo-token.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Taboo Heat 5
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563297.mp4
+
+#EXTINF:-1 tvg-logo="https://invezz.com/wp-content/uploads/2021/11/where-to-buy-the-taboo-token.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Taboo Heat 6
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563298.mp4
+
+#EXTINF:-1 tvg-logo="https://invezz.com/wp-content/uploads/2021/11/where-to-buy-the-taboo-token.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Taboo Heat 7
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563299.mp4
+
+#EXTINF:-1 tvg-logo="https://invezz.com/wp-content/uploads/2021/11/where-to-buy-the-taboo-token.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Taboo Heat 8
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563300.mp4
+
+#EXTINF:-1 tvg-logo="https://invezz.com/wp-content/uploads/2021/11/where-to-buy-the-taboo-token.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Taboo Heat 9
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563301.mp4
+
+#EXTINF:-1 tvg-logo="https://invezz.com/wp-content/uploads/2021/11/where-to-buy-the-taboo-token.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Taboo Heat 10
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563302.mp4
+
+#EXTINF:-1 tvg-logo="https://invezz.com/wp-content/uploads/2021/11/where-to-buy-the-taboo-token.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Taboo Heat 11
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563303.mp4
+
+#EXTINF:-1 tvg-logo="https://invezz.com/wp-content/uploads/2021/11/where-to-buy-the-taboo-token.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Taboo Heat 12
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563304.mp4
+
+#EXTINF:-1 tvg-logo="https://invezz.com/wp-content/uploads/2021/11/where-to-buy-the-taboo-token.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", Taboo Heat 13
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563305.mp4
+
+#EXTINF:-1 tvg-logo="https://avatars.steamstatic.com/af90b47ea3a2afa6e9d3a9863286d63a9964ac1c_medium.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", MYLF 1
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563116.mp4
+
+#EXTINF:-1 tvg-logo="https://avatars.steamstatic.com/af90b47ea3a2afa6e9d3a9863286d63a9964ac1c_medium.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", MYLF 2
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563190.mp4
+
+#EXTINF:-1 tvg-logo="https://avatars.steamstatic.com/af90b47ea3a2afa6e9d3a9863286d63a9964ac1c_medium.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", MYLF 3
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563191.mp4
+
+#EXTINF:-1 tvg-logo="https://avatars.steamstatic.com/af90b47ea3a2afa6e9d3a9863286d63a9964ac1c_medium.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", MYLF 4
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563192.mp4
+
+#EXTINF:-1 tvg-logo="https://avatars.steamstatic.com/af90b47ea3a2afa6e9d3a9863286d63a9964ac1c_medium.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", MYLF 5
+http://pumas.life:8080/movie/Tom93/SJTndaC2b6Fq/563193.mp4
+
+#EXTINF:-1 tvg-logo="https://sex-rankings.com/wp-content/uploads/2021/06/icon_5-35.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", BANG.com [1]
+http://103.211.101.138:900/movie/9976612136/9725477748/400514518.mp4
+
+#EXTINF:-1 tvg-logo="https://sex-rankings.com/wp-content/uploads/2021/06/icon_5-35.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", BANG.com [2]
+http://103.211.101.138:900/movie/9976612136/9725477748/400514517.mp4
+
+#EXTINF:-1 tvg-logo="https://sex-rankings.com/wp-content/uploads/2021/06/icon_5-35.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", BANG.com [3]
+http://103.211.101.138:900/movie/9976612136/9725477748/400514521.mp4
+
+#EXTINF:-1 tvg-logo="https://sex-rankings.com/wp-content/uploads/2021/06/icon_5-35.jpg" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]", BANG.com [4]
+http://103.211.101.138:900/movie/9976612136/9725477748/400514523.mp4
+
+#EXTINF:-1 tvg-id="no_epg_xxx" tvg-logo="https://s.rbk.ru/v1_companies_s3/media/trademarks/0737acd5-1854-4f3c-9521-2b9d82c4d54e.jpg" group-title="Взрослые [ВХОД СТРОГО 18+]", Porn Classic
+http://200.194.238.229:8383/live/pornclassic/playlist.m3u8
+
+#EXTINF:-1 tvg-id="no_epg_xxx" tvg-logo="http://1.bp.blogspot.com/-E-qvJLo_j1s/UB7Jd47Ro2I/AAAAAAAAATw/qQskQfN6tQ4/s1600/miami-tv-logo-gif2_design.png" group-title="Взрослые [ВХОД СТРОГО 18+]",Miami TV
+http://59ec5453559f0.streamlock.net:1935/Miamitv/smil:WEB4141/chuklist.m3u8
+
+#EXTINF:-1 tvg-id="no_epg_xxx" tvg-logo="https://yt3.googleusercontent.com/ytc/AGIKgqORiRitDqn2R8PSKF7BXUHjId1B0eJwES7WCjOjeQ=s900-c-k-c0x00ffffff-no-rj" group-title="Взрослые [ВХОД СТРОГО 18+]", Rouge TV
+http://event.vedge.infomaniak.com/livecast/event.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="no_epg_xxx" tvg-logo="https://www.eropuls.de/out/flow/img/shoplogo.png" group-title="Взрослые [ВХОД СТРОГО 18+]",Eropuls DE 18+
+https://api.alpaca.t62a.com/hls/9108/stream0.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Rough
+http://cdn.adultiptv.net/rough.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Blonde
+http://cdn.adultiptv.net/blonde.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Anal
+http://cdn.adultiptv.net/anal.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Live Cams
+http://cdn.adultiptv.net/livecams.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Russian
+http://cdn.adultiptv.net/russian.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Threesome
+http://cdn.adultiptv.net/threesome.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Hardcore
+http://cdn.adultiptv.net/hardcore.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Teen
+http://cdn.adultiptv.net/teen.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Blowjob
+http://cdn.adultiptv.net/blowjob.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",POV
+http://cdn.adultiptv.net/pov.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Latina
+http://cdn.adultiptv.net/latina.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Interracial
+http://cdn.adultiptv.net/interracial.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Big Ass
+http://cdn.adultiptv.net/bigass.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Fetish
+http://cdn.adultiptv.net/fetish.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Big Tits
+http://live.redtraffic.xyz/bigtits.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Big Dick
+http://cdn.adultiptv.net/bigdick.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",MILF
+http://cdn.adultiptv.net/milf.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Pornstar
+http://cdn.adultiptv.net/pornstar.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Lesbian
+http://cdn.adultiptv.net/lesbian.m3u8
+
+#EXTINF:-1 tvg-logo="http://i123.fastpic.org/big/2024/0716/50/20497257390becd38ff0f6f5e282c550.png" tvg-id="no_epg_xxx" group-title="Взрослые [ВХОД СТРОГО 18+]",Cuckold
+http://live.redtraffic.xyz/cuckold.m3u8
+
