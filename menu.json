@@ -60,6 +60,19 @@
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
+               "headline": "Movix",
+               "text": "Видеосервис от Дом.ру"
+            }
+         },
+         "image": "https://relonir8.github.io/msx/img/anb_movix.png",
+         "action": "link:http://cdn.smarttv.domru.ru/hisense/"
+      },      
+      {
+         "focus": true,
+         "selection": {
+            "important": true,
+            "action": "update:content:underlay:text",
+            "data": {
                "headline": "DRM-play",
                "text": "IPTV плеер с поддержкой плейлистов в формате m3u, m3u8, stalker-portal, медиатеки. Тестовый плейлист для ознакомления с функциями плеера"
             }
@@ -162,18 +175,18 @@
          },
          "image": "https://github.com/wals09/msx/blob/main/logo/vokino.png?raw=true",
          "action": "link: http://web.vokino.tv/"
-      },
+      }.
       {
          "selection": {
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
-               "headline": "Forkplayer",
-               "text": "Bеб-браузер, адаптированный для просмотра специальных интернет-страниц с автоматически обновляемыми плейлистами, предоставляет возможность прямо с браузера смотреть фильмы, ТВ-каналы, слушать музыку, радиостанции"
+               "headline": "Twitch",
+               "text": "Cервис, специализирующийся на тематике компьютерных игр"
             }
          },
-         "image": "https://wals09.github.io/msx/logon/fork_com.png",
-         "action": "link:http://browser.appfxml.com/"
+         "image": "https://relonir8.github.io/msx/logon/anb_twitch.png",
+         "action": "link:https://hisense.tv.twitch.tv/"
       }
    ]
 }
