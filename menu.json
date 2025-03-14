@@ -85,18 +85,6 @@
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
-               "headline": "YouTube",
-               "text": "Oнлайн-сервис для хостинга и просмотра видео"
-            }
-         },
-         "image": "https://wals09.github.io/msx/logon/youtube.png",
-         "action": "link:https://www.youtube.com/tv#/"
-      },
-      {
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
                "headline": "Lampa UnCensored",
                "text": "Мод программы Лампа{br}c установленым магазином плагинов и другими «плюшками»"
             }
