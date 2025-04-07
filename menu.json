@@ -58,18 +58,6 @@
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
-               "headline": "LAMPA land",
-               "text": "Мод программы Лампа{br}Программа уже настроенная для он-лайн просмотра и просмотра iptv"
-            }
-         },
-         "image": "https://wals09.github.io/msx/lampa_land/icon.png",
-         "action": "link:http://lampa.land"
-      },
-      {
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
                "headline": "ATODO",
                "text": "Web версия приложения ATODO. Просмотр различного медиаконтента: фильмов, сериалов, аниме, а так же просмотр торрентов"
             }
