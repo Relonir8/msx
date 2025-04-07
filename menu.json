@@ -42,45 +42,6 @@
    },
    "items": [
       {
-         "focus": true,
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
-               "headline": "Ufanet",
-               "text": "Просмотр IPTV Ufanet"
-            }
-         },
-         "image": "https://relonir8.github.io/msx/img/anb_ipufatv.png",
-         "action": "link:http://webkit.ufanet.platform24.tv/"
-      },
-      {
-         "focus": true,
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
-               "headline": "Movix",
-               "text": "Видеосервис от Дом.ру"
-            }
-         },
-         "image": "https://relonir8.github.io/msx/img/anb_movix.png",
-         "action": "link:http://cdn.smarttv.domru.ru/hisense/"
-      },      
-      {
-         "focus": true,
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
-               "headline": "DRM-play",
-               "text": "IPTV плеер с поддержкой плейлистов в формате m3u, m3u8, stalker-portal, медиатеки. Тестовый плейлист для ознакомления с функциями плеера"
-            }
-         },
-         "image": "https://wals09.github.io/msx/logon/drm.png",
-         "action": "link:http://ott.drm-play.com"
-      },
-      {
          "selection": {
             "important": true,
             "action": "update:content:underlay:text",
@@ -109,18 +70,6 @@
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
-               "headline": "Prisma TV",
-               "text": "Мод программы Лампа{br}В данный момент находиться в разработке и некоторые функции могут быть недоступны!!!{br}Опубликованно только для ознакомления с программой!!!"
-            }
-         },
-         "image": "https://wals09.github.io/msx/logon/prisma.png",
-         "action": "panel: https://wals09.github.io/msx/prisma/template.json"
-      },
-      {
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
                "headline": "ATODO",
                "text": "Web версия приложения ATODO. Просмотр различного медиаконтента: фильмов, сериалов, аниме, а так же просмотр торрентов"
             }
@@ -129,40 +78,17 @@
          "action": "link:http://msx.atodo.fun/"
       },
       {
+         "focus": true,
          "selection": {
             "important": true,
             "action": "update:content:underlay:text",
             "data": {
-               "headline": "MOOVIES",
-               "text": "Приложение для просмотра различного медиаконтента: фильмов, сериалов, аниме, а так же просмотр торрентов, iptv, прослушивание радиостанций"
+               "headline": "Ufanet",
+               "text": "Просмотр IPTV Ufanet"
             }
          },
-         "image": "https://wals09.github.io/msx/logon/moovies.png",
-         "action": "menu:request:interaction:init@http://moovies.uz/index.html"
-      },
-      {
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
-               "headline": "MOVIELAB",
-               "text": "Портал MOVIELAB на базе Media Station X. Просмотр видео контента on-line"
-            }
-         },
-         "image": "https://wals09.github.io/msx/logon/movielab.png",
-         "action": "menu:https://movielab.fun/msx/menu.json"
-      },
-      {
-         "selection": {
-            "important": true,
-            "action": "update:content:underlay:text",
-            "data": {
-               "headline": "VoKINO",
-               "text": "Приложение для просмотра различного медиаконтента: фильмов, сериалов, аниме, а так же просмотр торрентов"
-            }
-         },
-         "image": "https://github.com/wals09/msx/blob/main/logo/vokino.png?raw=true",
-         "action": "link: http://web.vokino.tv/"
+         "image": "https://relonir8.github.io/msx/img/anb_ipufatv.png",
+         "action": "link:http://webkit.ufanet.platform24.tv/"
       },
       {
          "selection": {
