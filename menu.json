@@ -42,6 +42,19 @@
    },
    "items": [
       {
+         "focus": true,
+         "selection": {
+            "important": true,
+            "action": "update:content:underlay:text",
+            "data": {
+               "headline": "DRM-play",
+               "text": "IPTV плеер с поддержкой плейлистов в формате m3u, m3u8, stalker-portal, медиатеки. Тестовый плейлист для ознакомления с функциями плеера."
+            }
+         },
+         "image": "https://wals09.github.io/msx/logon/drm.png",
+         "action": "link:http://ott.drm-play.com"
+      },
+      {
          "selection": {
             "important": true,
             "action": "update:content:underlay:text",
